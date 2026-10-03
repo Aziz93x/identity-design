@@ -7,3 +7,5 @@ assets/identity/** -text
 *.pptx binary
 *.png binary
 *.jpg binary
+*.ttf binary
+*.otf binary

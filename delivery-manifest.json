@@ -2,14 +2,15 @@
   "schema": "identity-design-delivery/v1",
   "author": "Abdulaziz Almalki",
   "version": "1.3.0",
-  "created_at_utc": "2026-10-03T10:09:15.106026+00:00",
+  "created_at_utc": "2026-10-03T10:32:25.907610+00:00",
   "repository": "https://github.com/Aziz93x/identity-design",
   "original_asset_authorship": "Preserved; the package author field does not reassign authorship of original brand assets.",
-  "font_distribution": "DIN font files are not included. Configure a user-licensed font folder.",
+  "font_distribution": "All 10 original font files are included at the user's explicit request; original embedded licenses and attribution are preserved, and MIT does not apply to these assets.",
   "validation": {
     "skill_structure": "passed",
     "helper_tests_passed": 42,
     "original_design_assets_hash_matched": 45,
+    "original_font_files_hash_matched": 10,
     "ready_template": {
       "slides": 6,
       "native_powerpoint_visual_review": "all 6 slides passed",
@@ -29,8 +30,8 @@
   "files": [
     {
       "path": ".gitattributes",
-      "bytes": 135,
-      "sha256": "70e4fd817af0129a4ac0eee69d9bc965a07ab58134f1b84f316910da7f594a7a",
+      "bytes": 161,
+      "sha256": "e1db1eb66e22cf78a59d9faa807e9141449e08c1d891db0e77cea0108410a2ff",
       "distribution": "repository_and_full_zip"
     },
     {
@@ -47,8 +48,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 10605,
-      "sha256": "f7947e4d46b870298b836baa8aa2f2ae00df3a696bbf8be42b1a648fe0c8df9e",
+      "bytes": 11430,
+      "sha256": "bf2523d854ffbf6f7270ba7f37ab7340ae03d2d65f83a80a958855d0f0e463ae",
       "distribution": "repository_and_full_zip"
     },
     {
@@ -65,14 +66,14 @@
     },
     {
       "path": "assets/README.md",
-      "bytes": 2550,
-      "sha256": "c5352b513854f4300e5bb04e9f35274a5925bc07753294b1e79f8e3b283a5105",
+      "bytes": 3136,
+      "sha256": "e1a0d43408a07b58d1e0a968ed93d45820197df15ec914145033f59319c6dc0e",
       "distribution": "repository_and_full_zip"
     },
     {
       "path": "assets/catalog.json",
-      "bytes": 34903,
-      "sha256": "cb399d318d108905b13a1aa0f88b8172a119d74c47b8ec678682a47bfb045bcd",
+      "bytes": 42510,
+      "sha256": "c4a2eef15872090ac197589d70516d1d6d90d8587684e959f9fef258ba41fc30",
       "distribution": "repository_and_full_zip"
     },
     {
@@ -175,6 +176,66 @@
       "path": "assets/identity/التطبيقات على المنتجات - Product Applications/قالب الكاسات .psd",
       "bytes": 3029956,
       "sha256": "4eceb9251e750b57cac265301ca717ad9cb4ad391d6bac05f322995b14eaa3b0",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الخطوط -Fonts/Cairo-Regular.ttf",
+      "bytes": 30372,
+      "sha256": "1f7a54c991e376075fcb43f3a69e1c0156dc6c568f78674ba954b6575a4438dc",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الخطوط -Fonts/DIN NEXT™ ARABIC REGULAR.otf",
+      "bytes": 140148,
+      "sha256": "c679ef00e0b323ee7fba7974acba0bfdff6ed27a6c85c143382a293b02079288",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الخطوط -Fonts/DINNEXTLTARABIC-LIGHT-2-2.ttf",
+      "bytes": 175912,
+      "sha256": "c0dbf35118ff693eb22b7c996ee63351b75d4c427c763960863d873e2c355b6c",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الخطوط -Fonts/DINNextLTArabic-Regular-3.ttf",
+      "bytes": 162978,
+      "sha256": "21128d204de2676f2479dedfef937ef479fe4dbc106c2708cbf9e2afa1318e03",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الخطوط -Fonts/FontsFree-Net-GeometricSlab703BT-Bold.ttf",
+      "bytes": 24384,
+      "sha256": "b3b20da62ca36e49da13702345350df058cd253a3b393c2b9103e33b02703206",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الخطوط -Fonts/GE-Dinar-One-Light.otf",
+      "bytes": 20184,
+      "sha256": "cb7ce2ecf8f1c13b577e9e1a59125d61e2f5cd5f0f4a18a2c6f44de946cd6ac5",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الخطوط -Fonts/alfont_com_AlFont_com_DINNextLTArabic-Medium.ttf",
+      "bytes": 160805,
+      "sha256": "2d472fae50ec701cfbf4f1b69d8677676dbf18a4e62e5eacda0badf54715e9ab",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الخطوط -Fonts/din-next-lt-w23-light.ttf",
+      "bytes": 153976,
+      "sha256": "22968a6fbf135f497794fdaa8f55bb6ba2b6fbb070efcc07a6b89edf8a09ccca",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الخطوط -Fonts/geometric-slabserif-703-extra-bold-bt.ttf",
+      "bytes": 39800,
+      "sha256": "cd47f901916a1f6c8420ca923ef9dce82ced928f1ef13578b494474f7afc7a45",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الخطوط -Fonts/ntaqat.ttf",
+      "bytes": 166232,
+      "sha256": "60a23b06a63300530b748be1a50ffd15687c44001c835876d5896af40108c2c4",
       "distribution": "repository_and_full_zip"
     },
     {
@@ -377,8 +438,8 @@
     },
     {
       "path": "references/asset-map.md",
-      "bytes": 22368,
-      "sha256": "6b80d42c5e087a3942b8f3a4f8ecfd43eba309727b49ef94403a095f4554d412",
+      "bytes": 22536,
+      "sha256": "5a5e3e54b288dd2dc02f8ee41d3c2a4129bac04dd970795bd4ff42f6bbbff898",
       "distribution": "repository_and_full_zip"
     },
     {

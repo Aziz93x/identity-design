@@ -152,6 +152,17 @@
     },
     "policies": {
       "label_ar": "تعليمات الشعارات"
+    },
+    "fonts": {
+      "label_ar": "الخطوط الأصلية",
+      "files": 10,
+      "approved_arabic_family": "DIN Next LT Arabic",
+      "approved_arabic_styles": [
+        "Regular",
+        "Light",
+        "Medium"
+      ],
+      "installation": "Load or install the required font for the editor; the preflight checks file availability only."
     }
   },
   "files": [
@@ -770,32 +781,164 @@
       "author": "Abdulaziz Almalki",
       "rights": "original_asset_owners",
       "setup_command": "python scripts/prepare_assets.py"
+    },
+    {
+      "path": "الخطوط -Fonts/alfont_com_AlFont_com_DINNextLTArabic-Medium.ttf",
+      "group": "fonts",
+      "availability": "bundled",
+      "bytes": 160805,
+      "sha256": "2d472fae50ec701cfbf4f1b69d8677676dbf18a4e62e5eacda0badf54715e9ab",
+      "source_sha256": "2d472fae50ec701cfbf4f1b69d8677676dbf18a4e62e5eacda0badf54715e9ab",
+      "preserved_original": true,
+      "rights": "original_font_owners_and_embedded_license_terms",
+      "audit_id": "F045",
+      "requires_task_cleanup": false,
+      "usage_note_ar": "مرفق من حزمة المستخدم بطلبه، مع حفظ الترخيص والنسبة الأصليين؛ وجود الملف لا يوسع قائمة خطوط الهوية المعتمدة."
+    },
+    {
+      "path": "الخطوط -Fonts/Cairo-Regular.ttf",
+      "group": "fonts",
+      "availability": "bundled",
+      "bytes": 30372,
+      "sha256": "1f7a54c991e376075fcb43f3a69e1c0156dc6c568f78674ba954b6575a4438dc",
+      "source_sha256": "1f7a54c991e376075fcb43f3a69e1c0156dc6c568f78674ba954b6575a4438dc",
+      "preserved_original": true,
+      "rights": "original_font_owners_and_embedded_license_terms",
+      "audit_id": "F046",
+      "requires_task_cleanup": false,
+      "usage_note_ar": "مرفق من حزمة المستخدم بطلبه، مع حفظ الترخيص والنسبة الأصليين؛ وجود الملف لا يوسع قائمة خطوط الهوية المعتمدة."
+    },
+    {
+      "path": "الخطوط -Fonts/DIN NEXT™ ARABIC REGULAR.otf",
+      "group": "fonts",
+      "availability": "bundled",
+      "bytes": 140148,
+      "sha256": "c679ef00e0b323ee7fba7974acba0bfdff6ed27a6c85c143382a293b02079288",
+      "source_sha256": "c679ef00e0b323ee7fba7974acba0bfdff6ed27a6c85c143382a293b02079288",
+      "preserved_original": true,
+      "rights": "original_font_owners_and_embedded_license_terms",
+      "audit_id": "F047",
+      "requires_task_cleanup": false,
+      "usage_note_ar": "مرفق من حزمة المستخدم بطلبه، مع حفظ الترخيص والنسبة الأصليين؛ وجود الملف لا يوسع قائمة خطوط الهوية المعتمدة."
+    },
+    {
+      "path": "الخطوط -Fonts/din-next-lt-w23-light.ttf",
+      "group": "fonts",
+      "availability": "bundled",
+      "bytes": 153976,
+      "sha256": "22968a6fbf135f497794fdaa8f55bb6ba2b6fbb070efcc07a6b89edf8a09ccca",
+      "source_sha256": "22968a6fbf135f497794fdaa8f55bb6ba2b6fbb070efcc07a6b89edf8a09ccca",
+      "preserved_original": true,
+      "rights": "original_font_owners_and_embedded_license_terms",
+      "audit_id": "F048",
+      "requires_task_cleanup": false,
+      "usage_note_ar": "مرفق من حزمة المستخدم بطلبه، مع حفظ الترخيص والنسبة الأصليين؛ وجود الملف لا يوسع قائمة خطوط الهوية المعتمدة."
+    },
+    {
+      "path": "الخطوط -Fonts/DINNEXTLTARABIC-LIGHT-2-2.ttf",
+      "group": "fonts",
+      "availability": "bundled",
+      "bytes": 175912,
+      "sha256": "c0dbf35118ff693eb22b7c996ee63351b75d4c427c763960863d873e2c355b6c",
+      "source_sha256": "c0dbf35118ff693eb22b7c996ee63351b75d4c427c763960863d873e2c355b6c",
+      "preserved_original": true,
+      "rights": "original_font_owners_and_embedded_license_terms",
+      "audit_id": "F049",
+      "requires_task_cleanup": false,
+      "usage_note_ar": "مرفق من حزمة المستخدم بطلبه، مع حفظ الترخيص والنسبة الأصليين؛ وجود الملف لا يوسع قائمة خطوط الهوية المعتمدة."
+    },
+    {
+      "path": "الخطوط -Fonts/DINNextLTArabic-Regular-3.ttf",
+      "group": "fonts",
+      "availability": "bundled",
+      "bytes": 162978,
+      "sha256": "21128d204de2676f2479dedfef937ef479fe4dbc106c2708cbf9e2afa1318e03",
+      "source_sha256": "21128d204de2676f2479dedfef937ef479fe4dbc106c2708cbf9e2afa1318e03",
+      "preserved_original": true,
+      "rights": "original_font_owners_and_embedded_license_terms",
+      "audit_id": "F050",
+      "requires_task_cleanup": false,
+      "usage_note_ar": "مرفق من حزمة المستخدم بطلبه، مع حفظ الترخيص والنسبة الأصليين؛ وجود الملف لا يوسع قائمة خطوط الهوية المعتمدة."
+    },
+    {
+      "path": "الخطوط -Fonts/FontsFree-Net-GeometricSlab703BT-Bold.ttf",
+      "group": "fonts",
+      "availability": "bundled",
+      "bytes": 24384,
+      "sha256": "b3b20da62ca36e49da13702345350df058cd253a3b393c2b9103e33b02703206",
+      "source_sha256": "b3b20da62ca36e49da13702345350df058cd253a3b393c2b9103e33b02703206",
+      "preserved_original": true,
+      "rights": "original_font_owners_and_embedded_license_terms",
+      "audit_id": "F051",
+      "requires_task_cleanup": false,
+      "usage_note_ar": "مرفق من حزمة المستخدم بطلبه، مع حفظ الترخيص والنسبة الأصليين؛ وجود الملف لا يوسع قائمة خطوط الهوية المعتمدة."
+    },
+    {
+      "path": "الخطوط -Fonts/GE-Dinar-One-Light.otf",
+      "group": "fonts",
+      "availability": "bundled",
+      "bytes": 20184,
+      "sha256": "cb7ce2ecf8f1c13b577e9e1a59125d61e2f5cd5f0f4a18a2c6f44de946cd6ac5",
+      "source_sha256": "cb7ce2ecf8f1c13b577e9e1a59125d61e2f5cd5f0f4a18a2c6f44de946cd6ac5",
+      "preserved_original": true,
+      "rights": "original_font_owners_and_embedded_license_terms",
+      "audit_id": "F052",
+      "requires_task_cleanup": false,
+      "usage_note_ar": "مرفق من حزمة المستخدم بطلبه، مع حفظ الترخيص والنسبة الأصليين؛ وجود الملف لا يوسع قائمة خطوط الهوية المعتمدة."
+    },
+    {
+      "path": "الخطوط -Fonts/geometric-slabserif-703-extra-bold-bt.ttf",
+      "group": "fonts",
+      "availability": "bundled",
+      "bytes": 39800,
+      "sha256": "cd47f901916a1f6c8420ca923ef9dce82ced928f1ef13578b494474f7afc7a45",
+      "source_sha256": "cd47f901916a1f6c8420ca923ef9dce82ced928f1ef13578b494474f7afc7a45",
+      "preserved_original": true,
+      "rights": "original_font_owners_and_embedded_license_terms",
+      "audit_id": "F053",
+      "requires_task_cleanup": false,
+      "usage_note_ar": "مرفق من حزمة المستخدم بطلبه، مع حفظ الترخيص والنسبة الأصليين؛ وجود الملف لا يوسع قائمة خطوط الهوية المعتمدة."
+    },
+    {
+      "path": "الخطوط -Fonts/ntaqat.ttf",
+      "group": "fonts",
+      "availability": "bundled",
+      "bytes": 166232,
+      "sha256": "60a23b06a63300530b748be1a50ffd15687c44001c835876d5896af40108c2c4",
+      "source_sha256": "60a23b06a63300530b748be1a50ffd15687c44001c835876d5896af40108c2c4",
+      "preserved_original": true,
+      "rights": "original_font_owners_and_embedded_license_terms",
+      "audit_id": "F054",
+      "requires_task_cleanup": false,
+      "usage_note_ar": "مرفق من حزمة المستخدم بطلبه، مع حفظ الترخيص والنسبة الأصليين؛ وجود الملف لا يوسع قائمة خطوط الهوية المعتمدة."
     }
   ],
   "fonts": {
+    "bundled_directory": "الخطوط -Fonts",
+    "external_override_optional": true,
     "environment_variable": "IDENTITY_DESIGN_FONT_ROOT",
     "cli_option": "--font-root",
     "files": [
       {
         "filename": "DINNextLTArabic-Regular-3.ttf",
         "source_sha256": "21128d204de2676f2479dedfef937ef479fe4dbc106c2708cbf9e2afa1318e03",
-        "availability": "user_licensed_font",
+        "availability": "bundled",
         "required_by_basic_preflight": true,
-        "reason": "The source font license prohibits copying or distribution without additional license rights."
+        "rights": "Original embedded font license terms are preserved; not relicensed under MIT."
       },
       {
         "filename": "alfont_com_AlFont_com_DINNextLTArabic-Medium.ttf",
         "source_sha256": "2d472fae50ec701cfbf4f1b69d8677676dbf18a4e62e5eacda0badf54715e9ab",
-        "availability": "user_licensed_font",
+        "availability": "bundled",
         "required_by_basic_preflight": true,
-        "reason": "The source font license prohibits copying or distribution without additional license rights."
+        "rights": "Original embedded font license terms are preserved; not relicensed under MIT."
       },
       {
         "filename": "DINNEXTLTARABIC-LIGHT-2-2.ttf",
         "source_sha256": "c0dbf35118ff693eb22b7c996ee63351b75d4c427c763960863d873e2c355b6c",
-        "availability": "user_licensed_font",
+        "availability": "bundled",
         "required_by_basic_preflight": false,
-        "reason": "The source font license prohibits copying or distribution without additional license rights."
+        "rights": "Original embedded font license terms are preserved; not relicensed under MIT."
       }
     ]
   },
