@@ -584,8 +584,8 @@
     },
     {
       "path": "tests/test_build_lite.py",
-      "bytes": 5863,
-      "sha256": "0b3cd8fe3a5051bf3a3fdd7984d3efb10f5a2e2fc741f014156125c2a09df41e",
+      "bytes": 5951,
+      "sha256": "3b088e0199d655431c0d5cd7d587704112a7a26d7859b8d44e0f834779f8d127",
       "distribution": "repository"
     },
     {

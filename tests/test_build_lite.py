@@ -83,7 +83,8 @@ class LitePackageTests(unittest.TestCase):
             BUILD.build(self.root, self.base / "unsafe.zip")
 
     def test_output_created_by_another_process_is_preserved(self):
-        target = self.base / "raced.zip"
+        # Match build()'s canonical path, including temp-directory aliases.
+        target = (self.base / "raced.zip").resolve()
         original_open = Path.open
 
         def racing_open(path, mode="r", *args, **kwargs):
