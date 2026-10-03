@@ -1,16 +1,16 @@
 {
   "schema": "identity-design-delivery/v1",
   "author": "Abdulaziz Almalki",
-  "version": "1.4.0",
-  "binary_asset_version": "1.3.0",
-  "created_at_utc": "2026-10-03T11:15:23.408604+00:00",
+  "version": "1.5.0",
+  "binary_asset_version": "1.5.0",
+  "created_at_utc": "2026-10-03T12:15:37.368787+00:00",
   "repository": "https://github.com/Aziz93x/identity-design",
   "original_asset_authorship": "Preserved; the package author field does not reassign authorship of original brand assets.",
   "font_distribution": "All 10 original font files are included at the user's explicit request; original embedded licenses and attribution are preserved, and MIT does not apply to these assets.",
-  "release_distribution": "Repository/tag archives contain tracked assets. Reuse the existing verified guide download; no new duplicate full-bundle release attachment.",
+  "release_distribution": "One source repository plus reproducibly generated small installation ZIP; original large guide is reused from its verified v1.3.0 release URL.",
   "validation": {
     "skill_structure": "passed",
-    "helper_tests_passed": 41,
+    "helper_tests_passed": 72,
     "original_design_assets_hash_matched": 45,
     "original_font_files_hash_matched": 10,
     "ready_template": {
@@ -27,18 +27,37 @@
       "source_sha256": "8fd9f9bca8025c3ba7da906437a38abe2682cd05e15c62329461ed876b945efd",
       "sha256": "c16ce48860fa323949ca912c169948016450f5417583ca18d23782ed0cba5e19"
     },
-    "limits": "Platform support is documented from official sources; actual deployment across all platforms was not tested. Final artifacts must be checked in the available target environment. Prior Adobe and visual checks retain their documented scope.",
+    "limits": "Historical asset checks retain their scope; current evidence and platform limitations are recorded in references/verification-results.md. Helper tests and manifest verification do not establish model-output quality.",
     "basic_preflight_files": 7,
-    "all_binary_assets_unchanged_from_v1_3_0": 57,
     "exact_binary_duplicate_groups": 0,
-    "local_markdown_links_checked": 51,
-    "platform_usage_sources_reviewed": "2026-10-03"
+    "local_markdown_links_checked": 78,
+    "platform_usage_sources_reviewed": "2026-10-03",
+    "preserved_preexisting_binary_assets": 57,
+    "new_ready_templates": 3,
+    "derived_srgb_samples": 36,
+    "helper_tests_local_platforms": [
+      "Windows",
+      "Ubuntu via WSL"
+    ],
+    "behavior_comparison": {
+      "mode": "batched_exploratory",
+      "before_points": 95,
+      "after_points": 96,
+      "maximum_points_each": 96,
+      "passing_cases_each": 12
+    }
   },
   "files": [
     {
       "path": ".gitattributes",
-      "bytes": 161,
-      "sha256": "e1db1eb66e22cf78a59d9faa807e9141449e08c1d891db0e77cea0108410a2ff",
+      "bytes": 175,
+      "sha256": "49a1005cfdaf1fd706d2a5b6435fad21c7add458b0ed3b5b0c8c732ec527356f",
+      "distribution": "repository"
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "bytes": 673,
+      "sha256": "479d9bf0f9bcfeea7634c35cf197e46ce1aed7b582b39ab9f07b015242a3f50e",
       "distribution": "repository"
     },
     {
@@ -48,15 +67,51 @@
       "distribution": "repository"
     },
     {
+      "path": "LICENSE",
+      "bytes": 1453,
+      "sha256": "511434c3247afd4bbb1daddbe19032d1a69700ce5b31cc466664a02349f322eb",
+      "distribution": "repository"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4144,
+      "sha256": "36207cdf3c33bcd7b76f77f6ec8c754228d888d850cb1af6d24bb585eb7ecbc4",
+      "distribution": "repository"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 8621,
+      "sha256": "e0615cdd7cf8aab3908ee320c623ccb916d03b52f29760643ab2e0be95fca132",
+      "distribution": "repository"
+    },
+    {
+      "path": "USAGE.md",
+      "bytes": 15110,
+      "sha256": "d738e808ca2e6d0f8e07d5c5ef9434226234184bdf3860eb0feef3f2fbb25cb0",
+      "distribution": "repository"
+    },
+    {
       "path": "agents/openai.yaml",
-      "bytes": 438,
-      "sha256": "8797f43cc8f330625af8bdc9f994427719bb59cab633177c5521ba55224ebafa",
+      "bytes": 454,
+      "sha256": "9ebc462e092ae1a40eabd8b459f5793e73e1a7bce87fdf866d49c0fc33bb1234",
+      "distribution": "repository"
+    },
+    {
+      "path": "assets/README.md",
+      "bytes": 4677,
+      "sha256": "5c31ceeedb86fad36b7c7a0e92ed61d837578ef6abc8196875f7b1566f112976",
       "distribution": "repository"
     },
     {
       "path": "assets/catalog.json",
-      "bytes": 33993,
-      "sha256": "2d7e1f63e3e03ec2145e6f28c9c2d34ed050b5f398f35ccb92c5a0fde371c016",
+      "bytes": 38360,
+      "sha256": "5d58fc173a8f2ea92bf9dc519305dafe30bc9a8cf293c6798979e44f36258c8c",
+      "distribution": "repository"
+    },
+    {
+      "path": "assets/digital-tokens.json",
+      "bytes": 17883,
+      "sha256": "daa69e443951e890e6ac51ede1264e664f30bb8401e35bfd676d6381f8545e5f",
       "distribution": "repository"
     },
     {
@@ -156,12 +211,6 @@
       "distribution": "repository"
     },
     {
-      "path": "assets/identity/الخطوط -Fonts/alfont_com_AlFont_com_DINNextLTArabic-Medium.ttf",
-      "bytes": 160805,
-      "sha256": "2d472fae50ec701cfbf4f1b69d8677676dbf18a4e62e5eacda0badf54715e9ab",
-      "distribution": "repository"
-    },
-    {
       "path": "assets/identity/الخطوط -Fonts/Cairo-Regular.ttf",
       "bytes": 30372,
       "sha256": "1f7a54c991e376075fcb43f3a69e1c0156dc6c568f78674ba954b6575a4438dc",
@@ -171,12 +220,6 @@
       "path": "assets/identity/الخطوط -Fonts/DIN NEXT™ ARABIC REGULAR.otf",
       "bytes": 140148,
       "sha256": "c679ef00e0b323ee7fba7974acba0bfdff6ed27a6c85c143382a293b02079288",
-      "distribution": "repository"
-    },
-    {
-      "path": "assets/identity/الخطوط -Fonts/din-next-lt-w23-light.ttf",
-      "bytes": 153976,
-      "sha256": "22968a6fbf135f497794fdaa8f55bb6ba2b6fbb070efcc07a6b89edf8a09ccca",
       "distribution": "repository"
     },
     {
@@ -204,6 +247,18 @@
       "distribution": "repository"
     },
     {
+      "path": "assets/identity/الخطوط -Fonts/alfont_com_AlFont_com_DINNextLTArabic-Medium.ttf",
+      "bytes": 160805,
+      "sha256": "2d472fae50ec701cfbf4f1b69d8677676dbf18a4e62e5eacda0badf54715e9ab",
+      "distribution": "repository"
+    },
+    {
+      "path": "assets/identity/الخطوط -Fonts/din-next-lt-w23-light.ttf",
+      "bytes": 153976,
+      "sha256": "22968a6fbf135f497794fdaa8f55bb6ba2b6fbb070efcc07a6b89edf8a09ccca",
+      "distribution": "repository"
+    },
+    {
       "path": "assets/identity/الخطوط -Fonts/geometric-slabserif-703-extra-bold-bt.ttf",
       "bytes": 39800,
       "sha256": "cd47f901916a1f6c8420ca923ef9dce82ced928f1ef13578b494474f7afc7a45",
@@ -213,30 +268,6 @@
       "path": "assets/identity/الخطوط -Fonts/ntaqat.ttf",
       "bytes": 166232,
       "sha256": "60a23b06a63300530b748be1a50ffd15687c44001c835876d5896af40108c2c4",
-      "distribution": "repository"
-    },
-    {
-      "path": "assets/identity/الشعارات - Logos/PNG/horizontal-color.png",
-      "bytes": 28123,
-      "sha256": "805e86e196faa089ac63216b13d667ffcb00190659c79f7cf001c554684a64d5",
-      "distribution": "repository"
-    },
-    {
-      "path": "assets/identity/الشعارات - Logos/PNG/horizontal-white.png",
-      "bytes": 81786,
-      "sha256": "b3d658500c290e11005c5ac6e72d6e710b952ce3dcb0f8780b34746a844b2fa2",
-      "distribution": "repository"
-    },
-    {
-      "path": "assets/identity/الشعارات - Logos/PNG/vertical-color.png",
-      "bytes": 279429,
-      "sha256": "8b67ba15d2b388652c65ccfeab5cdf5ff6a3b5ae4b14fb24991b58d8a94139c5",
-      "distribution": "repository"
-    },
-    {
-      "path": "assets/identity/الشعارات - Logos/PNG/vertical-white.png",
-      "bytes": 442272,
-      "sha256": "7e935f57f8d73036d77b05bc56133fc96ad4309b334c638ed718337d5da1f862",
       "distribution": "repository"
     },
     {
@@ -261,6 +292,30 @@
       "path": "assets/identity/الشعارات - Logos/PNG-cropped/vertical-white.png",
       "bytes": 355532,
       "sha256": "a20ee9efa91337e7270a92e2d1199a68148979e2fffac60b8b49adfd73b0a59f",
+      "distribution": "repository"
+    },
+    {
+      "path": "assets/identity/الشعارات - Logos/PNG/horizontal-color.png",
+      "bytes": 28123,
+      "sha256": "805e86e196faa089ac63216b13d667ffcb00190659c79f7cf001c554684a64d5",
+      "distribution": "repository"
+    },
+    {
+      "path": "assets/identity/الشعارات - Logos/PNG/horizontal-white.png",
+      "bytes": 81786,
+      "sha256": "b3d658500c290e11005c5ac6e72d6e710b952ce3dcb0f8780b34746a844b2fa2",
+      "distribution": "repository"
+    },
+    {
+      "path": "assets/identity/الشعارات - Logos/PNG/vertical-color.png",
+      "bytes": 279429,
+      "sha256": "8b67ba15d2b388652c65ccfeab5cdf5ff6a3b5ae4b14fb24991b58d8a94139c5",
+      "distribution": "repository"
+    },
+    {
+      "path": "assets/identity/الشعارات - Logos/PNG/vertical-white.png",
+      "bytes": 442272,
+      "sha256": "7e935f57f8d73036d77b05bc56133fc96ad4309b334c638ed718337d5da1f862",
       "distribution": "repository"
     },
     {
@@ -402,33 +457,69 @@
       "distribution": "repository"
     },
     {
+      "path": "assets/identity/قوالب جاهزة/قالب خطاب رسمي.docx",
+      "bytes": 167191,
+      "sha256": "2e04297a0885223882cebd1937f230caa02f37594f3cd61c74f1576bd2b2e37a",
+      "distribution": "repository"
+    },
+    {
+      "path": "assets/identity/قوالب جاهزة/قالب شهادة تقدير.docx",
+      "bytes": 166507,
+      "sha256": "15fa41147da9e1683f8b540c1bbb29e243c015fe6f56ed0c3330bfb4e47d04b0",
+      "distribution": "repository"
+    },
+    {
+      "path": "assets/identity/قوالب جاهزة/قالب منشور مؤسسي.pptx",
+      "bytes": 141817,
+      "sha256": "971231fa638bf6923a35257c892ffb58dc9e1e0e6acccc914d268120b503fd96",
+      "distribution": "repository"
+    },
+    {
       "path": "assets/identity/ملف الهوية البصرية مفتوح (5).pdf",
       "bytes": 220109793,
       "sha256": "c16ce48860fa323949ca912c169948016450f5417583ca18d23782ed0cba5e19",
       "distribution": "existing_release_download"
     },
     {
-      "path": "assets/README.md",
-      "bytes": 2421,
-      "sha256": "0c7145e4fcdb4264193c60442f29c998d8035f2d6c472915af4e10a95f858421",
+      "path": "assets/previews/certificate-template.png",
+      "bytes": 40993,
+      "sha256": "da18a11ea4168ab01f39135890593d6310a7f8b1a6e24928024c6cee9c8be118",
       "distribution": "repository"
     },
     {
-      "path": "LICENSE",
-      "bytes": 1453,
-      "sha256": "511434c3247afd4bbb1daddbe19032d1a69700ce5b31cc466664a02349f322eb",
+      "path": "assets/previews/letter-template.png",
+      "bytes": 69753,
+      "sha256": "21981b9eb383f0e034f9372cee3a695c13309b1eb311450e9ac2abc987128b19",
       "distribution": "repository"
     },
     {
-      "path": "README.md",
-      "bytes": 3316,
-      "sha256": "7f2597eb36c8e4bb2b8f710c88ebb2f3a6aefc40d1172677ee826aea6082c3a7",
+      "path": "assets/previews/social-template.png",
+      "bytes": 56956,
+      "sha256": "f725d583f32f01aa848346fb8068b5071dfeca2096c5e855d59e6039d1d7ca7d",
+      "distribution": "repository"
+    },
+    {
+      "path": "assets/previews/training-template.png",
+      "bytes": 227602,
+      "sha256": "685595bcd9b4482f264edda4c82a8b1f20fdc898a58475af19319d1d5874b5a4",
+      "distribution": "repository"
+    },
+    {
+      "path": "evals/README.md",
+      "bytes": 5839,
+      "sha256": "28b629acb891cfeaabea022ed2de6fd7a19ac43f8859e565c56f2933fd4aded9",
+      "distribution": "repository"
+    },
+    {
+      "path": "evals/cases.json",
+      "bytes": 14453,
+      "sha256": "04c313a38ace924dd5642d40f774f526912da85365468ac0ca8d09d8c950b26e",
       "distribution": "repository"
     },
     {
       "path": "references/asset-map.md",
-      "bytes": 5654,
-      "sha256": "6d8eadef2ce2b85994a0a168cab5ded83db169f264fc00b4aa7550382c4a114b",
+      "bytes": 6134,
+      "sha256": "39cdbe740391673768fee852286d9af35f68afcfb643819d54301e52bb6cb3e9",
       "distribution": "repository"
     },
     {
@@ -445,26 +536,32 @@
     },
     {
       "path": "references/official-arabic.md",
-      "bytes": 3280,
-      "sha256": "3dc37361e329f059c9071c1b14f3160c1cbdc07121a6e8545715f5b9bde6b2d0",
+      "bytes": 3341,
+      "sha256": "dc7ee5dfce0af94a7384380236064caea04fe6e1fa2c3d32f8f4233ee6a71e1f",
       "distribution": "repository"
     },
     {
       "path": "references/palette-source.md",
-      "bytes": 5504,
-      "sha256": "8eb211babeae184c43ee0e77eaf4134bca2382bb2c46aa3f8c03693205bef4aa",
+      "bytes": 11911,
+      "sha256": "9a80210d1d96a047ab6db02b708bdec89f2192aa82c20cfbdf196151221b04e4",
       "distribution": "repository"
     },
     {
       "path": "references/verification-results.md",
-      "bytes": 22751,
-      "sha256": "41901c06dd15818c6ac8c607846ef1e9d2810ad863c1e1d18c6d60e18d82e946",
+      "bytes": 30035,
+      "sha256": "96ca0cf09dd3fee07bdd5f917f3f9cbbeee7750ad7e41146532a378fb8628bab",
       "distribution": "repository"
     },
     {
       "path": "references/visual-rules.md",
       "bytes": 6943,
       "sha256": "caa8f0ee791709d00c923464033dcc6510de0870a52be86e994fc3728b478c43",
+      "distribution": "repository"
+    },
+    {
+      "path": "scripts/build_lite.py",
+      "bytes": 6629,
+      "sha256": "973b817bfcb93c346a1a051150baafbdbcdd7269173f4f5d76608633c8867d30",
       "distribution": "repository"
     },
     {
@@ -475,14 +572,20 @@
     },
     {
       "path": "scripts/prepare_assets.py",
-      "bytes": 8341,
-      "sha256": "744d28036c36b20495d3fdb97d573d0e5cd7f0ba0fd2c41ee4ca8689409f47de",
+      "bytes": 8394,
+      "sha256": "808b6754c48523cf62996fb558e810607f3363e69868993ad0d92274f485fb7b",
       "distribution": "repository"
     },
     {
-      "path": "SKILL.md",
-      "bytes": 8281,
-      "sha256": "3066dc6f476a6c56f04508031f2139b9d2fd830ba21587e8bb8b85083f632a3f",
+      "path": "scripts/validate_package.py",
+      "bytes": 14515,
+      "sha256": "276bc3e832100e7600ea7255f5cfb258c9ebffe747c6930f877c6ccd5a6287d2",
+      "distribution": "repository"
+    },
+    {
+      "path": "tests/test_build_lite.py",
+      "bytes": 5863,
+      "sha256": "0b3cd8fe3a5051bf3a3fdd7984d3efb10f5a2e2fc741f014156125c2a09df41e",
       "distribution": "repository"
     },
     {
@@ -493,15 +596,16 @@
     },
     {
       "path": "tests/test_prepare_assets.py",
-      "bytes": 11220,
-      "sha256": "6aa4c66250368af04fbc04d6786b5d7dbb3abdffc08e9cce1a430effda54af77",
+      "bytes": 12739,
+      "sha256": "b0c1940b2771c31d50111d56924bf1c94396ac98098beef0bcbf7ff33ebde0aa",
       "distribution": "repository"
     },
     {
-      "path": "USAGE.md",
-      "bytes": 12073,
-      "sha256": "42811f026b7588e45b23166d6642490df34397711c9d0f1cd17f01d677d98a40",
+      "path": "tests/test_validate_package.py",
+      "bytes": 14714,
+      "sha256": "23b65f4b253d29d6a265a2b2b5600c1f28252c42621622d4fafe12270cba13bb",
       "distribution": "repository"
     }
-  ]
+  ],
+  "preserved_original_asset_version": "1.3.0"
 }

@@ -1,7 +1,7 @@
 {
   "author": "Abdulaziz Almalki",
-  "version": "1.4.0",
-  "binary_asset_version": "1.3.0",
+  "version": "1.5.0",
+  "binary_asset_version": "1.5.0",
   "asset_root": "identity",
   "source_audit_date": "2026-09-28",
   "groups": {
@@ -20,7 +20,8 @@
         "closing": 6
       },
       "picture_areas": "Editable native text boxes to replace with pictures; not click-to-insert placeholders.",
-      "has_preconfigured_animation": false
+      "has_preconfigured_animation": false,
+      "preview_path_from_package_root": "assets/previews/training-template.png"
     },
     "presentations": {
       "label_ar": "قالب العروض الأصلي",
@@ -152,6 +153,32 @@
     "fonts": {
       "label_ar": "الخطوط الأصلية",
       "files": 10
+    },
+    "ready_documents": {
+      "label_ar": "قالب خطاب رسمي منقّح",
+      "preferred_for": [
+        "documents"
+      ],
+      "native_format": "DOCX",
+      "native_word_template": true,
+      "page_orientation": "portrait"
+    },
+    "ready_certificates": {
+      "label_ar": "قالب شهادة تقدير منقّح",
+      "preferred_for": [
+        "certificates"
+      ],
+      "native_format": "DOCX",
+      "native_word_template": true,
+      "page_orientation": "landscape"
+    },
+    "ready_social_posts": {
+      "label_ar": "قالب منشور مؤسسي منقّح",
+      "preferred_for": [
+        "social_posts"
+      ],
+      "native_format": "PPTX",
+      "aspect_ratio": "1:1"
     }
   },
   "files": [
@@ -881,6 +908,89 @@
       "requires_task_cleanup": false,
       "font_family": "ntaqat / DIN Next LT Arabic",
       "font_style": "Light"
+    },
+    {
+      "path": "قوالب جاهزة/قالب خطاب رسمي.docx",
+      "group": "ready_documents",
+      "availability": "bundled",
+      "bytes": 167191,
+      "sha256": "2e04297a0885223882cebd1937f230caa02f37594f3cd61c74f1576bd2b2e37a",
+      "author": "Abdulaziz Almalki",
+      "preserved_original": false,
+      "requires_task_cleanup": false,
+      "requires_content_population": true,
+      "source_description_ar": "قالب خطاب رسمي منقّح مشتق من أصول الهوية المرفقة، بنص عربي حي وحقول تعبئة دون بيانات جهة أخرى.",
+      "preview_path_from_package_root": "assets/previews/letter-template.png",
+      "source_assets": [
+        "الشعارات - Logos/PNG-cropped/vertical-color.png"
+      ],
+      "native_verification": {
+        "renderer": "Microsoft Word 16.0",
+        "arabic_structure": "pass",
+        "logo_bytes_preserved": true
+      },
+      "pages": 1,
+      "page_dimensions_twips": {
+        "w": "11906",
+        "h": "16838"
+      },
+      "placeholder_count": 10
+    },
+    {
+      "path": "قوالب جاهزة/قالب شهادة تقدير.docx",
+      "group": "ready_certificates",
+      "availability": "bundled",
+      "bytes": 166507,
+      "sha256": "15fa41147da9e1683f8b540c1bbb29e243c015fe6f56ed0c3330bfb4e47d04b0",
+      "author": "Abdulaziz Almalki",
+      "preserved_original": false,
+      "requires_task_cleanup": false,
+      "requires_content_population": true,
+      "source_description_ar": "قالب شهادة تقدير منقّح مشتق من أصول الهوية المرفقة، بنص عربي حي وحقول تعبئة دون بيانات جهة أخرى.",
+      "preview_path_from_package_root": "assets/previews/certificate-template.png",
+      "source_assets": [
+        "الشعارات - Logos/PNG-cropped/vertical-color.png"
+      ],
+      "native_verification": {
+        "renderer": "Microsoft Word 16.0",
+        "arabic_structure": "pass",
+        "logo_bytes_preserved": true
+      },
+      "pages": 1,
+      "page_dimensions_twips": {
+        "w": "16838",
+        "h": "11906",
+        "orient": "landscape"
+      },
+      "placeholder_count": 6
+    },
+    {
+      "path": "قوالب جاهزة/قالب منشور مؤسسي.pptx",
+      "group": "ready_social_posts",
+      "availability": "bundled",
+      "bytes": 141817,
+      "sha256": "971231fa638bf6923a35257c892ffb58dc9e1e0e6acccc914d268120b503fd96",
+      "author": "Abdulaziz Almalki",
+      "preserved_original": false,
+      "requires_task_cleanup": false,
+      "requires_content_population": true,
+      "source_description_ar": "قالب منشور مؤسسي منقّح مشتق من أصول الهوية المرفقة، بنص عربي حي وحقول تعبئة دون بيانات جهة أخرى.",
+      "preview_path_from_package_root": "assets/previews/social-template.png",
+      "source_assets": [
+        "الشعارات - Logos/PNG-cropped/vertical-color.png"
+      ],
+      "native_verification": {
+        "renderer": "Microsoft PowerPoint 16.0",
+        "arabic_structure": "pass",
+        "logo_bytes_preserved": true
+      },
+      "slides": 1,
+      "slide_dimensions_emu": {
+        "cx": "10287000",
+        "cy": "10287000"
+      },
+      "editable_textboxes": 5,
+      "placeholder_count": 6
     }
   ],
   "not_included_ar": [
@@ -890,5 +1000,10 @@
     "خواتيم الفيديو التي تحمل شعار المؤسسة العام",
     "سجلات QA المحلية وبيانات أمثلة الموظفين وبطاقاتهم"
   ],
-  "validation_scope_ar": "فحوص البصمة تحفظ بايتات الأصول الأصلية. دليل PDF مشتق مطابق بصرياً ونصياً. القالب الجاهز يفحص في PowerPoint؛ بقية مصادر Adobe لم يختبر تحريرها وحفظها داخل Adobe."
+  "validation_scope_ar": "فحوص البصمة تحفظ بايتات الأصول الأصلية. دليل PDF مشتق مطابق بصرياً ونصياً. القالب الجاهز يفحص في PowerPoint؛ بقية مصادر Adobe لم يختبر تحريرها وحفظها داخل Adobe.",
+  "preserved_original_asset_version": "1.3.0",
+  "digital_color_defaults": {
+    "path_from_package_root": "assets/digital-tokens.json",
+    "status": "documented_derived_bundle_defaults_not_official_hex"
+  }
 }

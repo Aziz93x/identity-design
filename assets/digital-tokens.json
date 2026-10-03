@@ -1,0 +1,1057 @@
+{
+  "author": "Abdulaziz Almalki",
+  "version": "1.0.0",
+  "status": "derived-bundle-defaults-not-official-hex",
+  "color_space": "sRGB",
+  "source": {
+    "path": "assets/identity/الأنماط والعناصر البصرية - Elements/الالوان الداعمة.pdf",
+    "sha256": "6dbe822fc39d2347627adef4b61296eccfa93b1a6833acfd6fbf8525b9a09beb",
+    "page": 1,
+    "operator": "DeviceCMYK nonstroking k + rectangle re",
+    "source_profile_present": false
+  },
+  "conversion": {
+    "profile_assignment": "Intentional bundle choice; palette PDF is untagged DeviceCMYK. Assign the CMYK profile embedded in the letterhead asset. This does not establish the original profile of the palette.",
+    "input_profile": {
+      "name": "U.S. Web Coated (SWOP) v2",
+      "asset_path": "assets/identity/المطبوعات - Print Materials/قالب الخطابات.ai",
+      "asset_sha256": "6e72c72fec75a984ca863f61610795cd60fe2c37638cff8d5f2bba589efbd3c9",
+      "pdf_object": 63,
+      "profile_sha256": "35f401731df11a4eba3502af632e51d68bc394bcb7d34632a331c1ba3f4a0bf6",
+      "bytes": 557168
+    },
+    "output_profile": "LittleCMS built-in sRGB from PIL.ImageCms.createProfile(\"sRGB\")",
+    "engine": "LittleCMS",
+    "engine_version": "2.19",
+    "library": "Pillow.ImageCms",
+    "pillow_version": "12.3.0",
+    "pypdf_version": "6.10.0",
+    "rendering_intent": "relative-colorimetric",
+    "rendering_intent_numeric": 1,
+    "flags": 0,
+    "black_point_compensation": false,
+    "input_quantization": "For each 0..1 CMYK channel use floor(value*255+0.5); transform a one-pixel CMYK image to 8-bit RGB.",
+    "output_encoding": "8-bit sRGB, uppercase #RRGGBB",
+    "precision_note": "8-bit input quantization is an intentional implementation constraint; this is not a high-precision ICC proofing reference."
+  },
+  "semantic_defaults": {
+    "primary": "support-r1-c2",
+    "secondary": "support-r1-c5",
+    "accent": "support-r1-c6",
+    "text": "support-r1-c1",
+    "muted": "support-r3-c1",
+    "surface": "#FFFFFF",
+    "rule": "support-r6-c1"
+  },
+  "semantic_note": "Semantic role assignments and white surface are application choices for the clean templates, not names or requirements published by the institution.",
+  "tokens": {
+    "support-r1-c1": {
+      "row_from_top": 1,
+      "column_from_left": 1,
+      "cmyk_0_1": [
+        0.69,
+        0.605,
+        0.587,
+        0.456
+      ],
+      "cmyk8": [
+        176,
+        154,
+        150,
+        116
+      ],
+      "rgb8": [
+        75,
+        77,
+        78
+      ],
+      "hex": "#4B4D4E",
+      "source_rect_pt": [
+        1899.744,
+        3190.839,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r2-c1": {
+      "row_from_top": 2,
+      "column_from_left": 1,
+      "cmyk_0_1": [
+        0.584,
+        0.474,
+        0.472,
+        0.141
+      ],
+      "cmyk8": [
+        149,
+        121,
+        120,
+        36
+      ],
+      "rgb8": [
+        115,
+        119,
+        120
+      ],
+      "hex": "#737778",
+      "source_rect_pt": [
+        1899.744,
+        2847.979,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r3-c1": {
+      "row_from_top": 3,
+      "column_from_left": 1,
+      "cmyk_0_1": [
+        0.485,
+        0.384,
+        0.387,
+        0.031
+      ],
+      "cmyk8": [
+        124,
+        98,
+        99,
+        8
+      ],
+      "rgb8": [
+        142,
+        146,
+        147
+      ],
+      "hex": "#8E9293",
+      "source_rect_pt": [
+        1899.744,
+        2500.981,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r4-c1": {
+      "row_from_top": 4,
+      "column_from_left": 1,
+      "cmyk_0_1": [
+        0.328,
+        0.257,
+        0.266,
+        0.0
+      ],
+      "cmyk8": [
+        84,
+        66,
+        68,
+        0
+      ],
+      "rgb8": [
+        177,
+        177,
+        178
+      ],
+      "hex": "#B1B1B2",
+      "source_rect_pt": [
+        1899.744,
+        2149.844,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r5-c1": {
+      "row_from_top": 5,
+      "column_from_left": 1,
+      "cmyk_0_1": [
+        0.256,
+        0.197,
+        0.204,
+        0.0
+      ],
+      "cmyk8": [
+        65,
+        50,
+        52,
+        0
+      ],
+      "rgb8": [
+        192,
+        193,
+        193
+      ],
+      "hex": "#C0C1C1",
+      "source_rect_pt": [
+        1899.744,
+        1794.567,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r6-c1": {
+      "row_from_top": 6,
+      "column_from_left": 1,
+      "cmyk_0_1": [
+        0.141,
+        0.107,
+        0.111,
+        0.0
+      ],
+      "cmyk8": [
+        36,
+        27,
+        28,
+        0
+      ],
+      "rgb8": [
+        217,
+        217,
+        218
+      ],
+      "hex": "#D9D9DA",
+      "source_rect_pt": [
+        1899.744,
+        1435.151,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r1-c2": {
+      "row_from_top": 1,
+      "column_from_left": 2,
+      "cmyk_0_1": [
+        0.984,
+        0.809,
+        0.293,
+        0.152
+      ],
+      "cmyk8": [
+        251,
+        206,
+        75,
+        39
+      ],
+      "rgb8": [
+        51,
+        78,
+        120
+      ],
+      "hex": "#334E78",
+      "source_rect_pt": [
+        3260.71,
+        3207.395,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r2-c2": {
+      "row_from_top": 2,
+      "column_from_left": 2,
+      "cmyk_0_1": [
+        0.913,
+        0.688,
+        0.197,
+        0.043
+      ],
+      "cmyk8": [
+        233,
+        175,
+        50,
+        11
+      ],
+      "rgb8": [
+        58,
+        98,
+        147
+      ],
+      "hex": "#3A6293",
+      "source_rect_pt": [
+        3272.604,
+        2880.656,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r3-c2": {
+      "row_from_top": 3,
+      "column_from_left": 2,
+      "cmyk_0_1": [
+        0.812,
+        0.497,
+        0.086,
+        0.0
+      ],
+      "cmyk8": [
+        207,
+        127,
+        22,
+        0
+      ],
+      "rgb8": [
+        69,
+        124,
+        178
+      ],
+      "hex": "#457CB2",
+      "source_rect_pt": [
+        3272.604,
+        2525.38,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r4-c2": {
+      "row_from_top": 4,
+      "column_from_left": 2,
+      "cmyk_0_1": [
+        0.711,
+        0.319,
+        0.0,
+        0.0
+      ],
+      "cmyk8": [
+        181,
+        81,
+        0,
+        0
+      ],
+      "rgb8": [
+        77,
+        150,
+        208
+      ],
+      "hex": "#4D96D0",
+      "source_rect_pt": [
+        3272.604,
+        2198.038,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r5-c2": {
+      "row_from_top": 5,
+      "column_from_left": 2,
+      "cmyk_0_1": [
+        0.611,
+        0.163,
+        0.0,
+        0.0
+      ],
+      "cmyk8": [
+        156,
+        42,
+        0,
+        0
+      ],
+      "rgb8": [
+        94,
+        176,
+        226
+      ],
+      "hex": "#5EB0E2",
+      "source_rect_pt": [
+        3272.604,
+        1823.105,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r6-c2": {
+      "row_from_top": 6,
+      "column_from_left": 2,
+      "cmyk_0_1": [
+        0.431,
+        0.009,
+        0.0,
+        0.0
+      ],
+      "cmyk8": [
+        110,
+        2,
+        0,
+        0
+      ],
+      "rgb8": [
+        137,
+        213,
+        246
+      ],
+      "hex": "#89D5F6",
+      "source_rect_pt": [
+        3272.604,
+        1451.708,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r1-c3": {
+      "row_from_top": 1,
+      "column_from_left": 3,
+      "cmyk_0_1": [
+        0.945,
+        0.652,
+        0.342,
+        0.161
+      ],
+      "cmyk8": [
+        241,
+        166,
+        87,
+        41
+      ],
+      "rgb8": [
+        46,
+        92,
+        123
+      ],
+      "hex": "#2E5C7B",
+      "source_rect_pt": [
+        4613.687,
+        3215.238,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r2-c3": {
+      "row_from_top": 2,
+      "column_from_left": 3,
+      "cmyk_0_1": [
+        0.875,
+        0.497,
+        0.267,
+        0.047
+      ],
+      "cmyk8": [
+        223,
+        127,
+        68,
+        12
+      ],
+      "rgb8": [
+        52,
+        117,
+        151
+      ],
+      "hex": "#347597",
+      "source_rect_pt": [
+        4613.687,
+        2872.378,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r3-c3": {
+      "row_from_top": 3,
+      "column_from_left": 3,
+      "cmyk_0_1": [
+        0.781,
+        0.295,
+        0.182,
+        0.002
+      ],
+      "cmyk8": [
+        199,
+        75,
+        46,
+        1
+      ],
+      "rgb8": [
+        57,
+        149,
+        184
+      ],
+      "hex": "#3995B8",
+      "source_rect_pt": [
+        4613.687,
+        2525.38,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r4-c3": {
+      "row_from_top": 4,
+      "column_from_left": 3,
+      "cmyk_0_1": [
+        0.691,
+        0.098,
+        0.112,
+        0.0
+      ],
+      "cmyk8": [
+        176,
+        25,
+        29,
+        0
+      ],
+      "rgb8": [
+        65,
+        179,
+        212
+      ],
+      "hex": "#41B3D4",
+      "source_rect_pt": [
+        4613.687,
+        2174.242,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r5-c3": {
+      "row_from_top": 5,
+      "column_from_left": 3,
+      "cmyk_0_1": [
+        0.579,
+        0.0,
+        0.052,
+        0.0
+      ],
+      "cmyk8": [
+        148,
+        0,
+        13,
+        0
+      ],
+      "rgb8": [
+        91,
+        202,
+        234
+      ],
+      "hex": "#5BCAEA",
+      "source_rect_pt": [
+        4613.687,
+        1818.966,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r6-c3": {
+      "row_from_top": 6,
+      "column_from_left": 3,
+      "cmyk_0_1": [
+        0.323,
+        0.0,
+        0.052,
+        0.0
+      ],
+      "cmyk8": [
+        82,
+        0,
+        13,
+        0
+      ],
+      "rgb8": [
+        170,
+        223,
+        238
+      ],
+      "hex": "#AADFEE",
+      "source_rect_pt": [
+        4613.687,
+        1459.55,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r1-c4": {
+      "row_from_top": 1,
+      "column_from_left": 4,
+      "cmyk_0_1": [
+        0.872,
+        0.474,
+        0.423,
+        0.154
+      ],
+      "cmyk8": [
+        222,
+        121,
+        108,
+        39
+      ],
+      "rgb8": [
+        53,
+        110,
+        125
+      ],
+      "hex": "#356E7D",
+      "source_rect_pt": [
+        5980.008,
+        3215.238,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r2-c4": {
+      "row_from_top": 2,
+      "column_from_left": 4,
+      "cmyk_0_1": [
+        0.85,
+        0.432,
+        0.337,
+        0.067
+      ],
+      "cmyk8": [
+        217,
+        110,
+        86,
+        17
+      ],
+      "rgb8": [
+        54,
+        123,
+        146
+      ],
+      "hex": "#367B92",
+      "source_rect_pt": [
+        5980.008,
+        2872.378,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r3-c4": {
+      "row_from_top": 3,
+      "column_from_left": 4,
+      "cmyk_0_1": [
+        0.743,
+        0.218,
+        0.236,
+        0.0
+      ],
+      "cmyk8": [
+        189,
+        56,
+        60,
+        0
+      ],
+      "rgb8": [
+        67,
+        160,
+        183
+      ],
+      "hex": "#43A0B7",
+      "source_rect_pt": [
+        5980.008,
+        2525.38,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r4-c4": {
+      "row_from_top": 4,
+      "column_from_left": 4,
+      "cmyk_0_1": [
+        0.622,
+        0.0,
+        0.139,
+        0.0
+      ],
+      "cmyk8": [
+        159,
+        0,
+        35,
+        0
+      ],
+      "rgb8": [
+        81,
+        198,
+        219
+      ],
+      "hex": "#51C6DB",
+      "source_rect_pt": [
+        5980.008,
+        2174.242,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r5-c4": {
+      "row_from_top": 5,
+      "column_from_left": 4,
+      "cmyk_0_1": [
+        0.524,
+        0.0,
+        0.114,
+        0.0
+      ],
+      "cmyk8": [
+        134,
+        0,
+        29,
+        0
+      ],
+      "rgb8": [
+        114,
+        205,
+        224
+      ],
+      "hex": "#72CDE0",
+      "source_rect_pt": [
+        5980.008,
+        1818.966,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r6-c4": {
+      "row_from_top": 6,
+      "column_from_left": 4,
+      "cmyk_0_1": [
+        0.394,
+        0.0,
+        0.071,
+        0.0
+      ],
+      "cmyk8": [
+        100,
+        0,
+        18,
+        0
+      ],
+      "rgb8": [
+        151,
+        216,
+        233
+      ],
+      "hex": "#97D8E9",
+      "source_rect_pt": [
+        5980.008,
+        1459.55,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r1-c5": {
+      "row_from_top": 1,
+      "column_from_left": 5,
+      "cmyk_0_1": [
+        0.778,
+        0.145,
+        0.39,
+        0.002
+      ],
+      "cmyk8": [
+        198,
+        37,
+        99,
+        1
+      ],
+      "rgb8": [
+        44,
+        166,
+        166
+      ],
+      "hex": "#2CA6A6",
+      "source_rect_pt": [
+        7339.657,
+        3215.238,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r2-c5": {
+      "row_from_top": 2,
+      "column_from_left": 5,
+      "cmyk_0_1": [
+        0.778,
+        0.145,
+        0.39,
+        0.002
+      ],
+      "cmyk8": [
+        198,
+        37,
+        99,
+        1
+      ],
+      "rgb8": [
+        44,
+        166,
+        166
+      ],
+      "hex": "#2CA6A6",
+      "source_rect_pt": [
+        7339.657,
+        2872.378,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r3-c5": {
+      "row_from_top": 3,
+      "column_from_left": 5,
+      "cmyk_0_1": [
+        0.695,
+        0.0,
+        0.326,
+        0.0
+      ],
+      "cmyk8": [
+        177,
+        0,
+        83,
+        0
+      ],
+      "rgb8": [
+        61,
+        191,
+        188
+      ],
+      "hex": "#3DBFBC",
+      "source_rect_pt": [
+        7339.657,
+        2525.38,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r4-c5": {
+      "row_from_top": 4,
+      "column_from_left": 5,
+      "cmyk_0_1": [
+        0.572,
+        0.0,
+        0.217,
+        0.0
+      ],
+      "cmyk8": [
+        146,
+        0,
+        55,
+        0
+      ],
+      "rgb8": [
+        104,
+        201,
+        206
+      ],
+      "hex": "#68C9CE",
+      "source_rect_pt": [
+        7339.657,
+        2174.242,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r5-c5": {
+      "row_from_top": 5,
+      "column_from_left": 5,
+      "cmyk_0_1": [
+        0.504,
+        0.0,
+        0.162,
+        0.0
+      ],
+      "cmyk8": [
+        129,
+        0,
+        41,
+        0
+      ],
+      "rgb8": [
+        122,
+        206,
+        216
+      ],
+      "hex": "#7ACED8",
+      "source_rect_pt": [
+        7339.657,
+        1818.966,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r6-c5": {
+      "row_from_top": 6,
+      "column_from_left": 5,
+      "cmyk_0_1": [
+        0.259,
+        0.0,
+        0.068,
+        0.0
+      ],
+      "cmyk8": [
+        66,
+        0,
+        17,
+        0
+      ],
+      "rgb8": [
+        187,
+        228,
+        236
+      ],
+      "hex": "#BBE4EC",
+      "source_rect_pt": [
+        7339.657,
+        1459.55,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r1-c6": {
+      "row_from_top": 1,
+      "column_from_left": 6,
+      "cmyk_0_1": [
+        0.614,
+        0.232,
+        0.691,
+        0.039
+      ],
+      "cmyk8": [
+        157,
+        59,
+        176,
+        10
+      ],
+      "rgb8": [
+        114,
+        157,
+        116
+      ],
+      "hex": "#729D74",
+      "source_rect_pt": [
+        8699.306,
+        3219.376,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r2-c6": {
+      "row_from_top": 2,
+      "column_from_left": 6,
+      "cmyk_0_1": [
+        0.547,
+        0.184,
+        0.614,
+        0.011
+      ],
+      "cmyk8": [
+        139,
+        47,
+        157,
+        3
+      ],
+      "rgb8": [
+        131,
+        171,
+        130
+      ],
+      "hex": "#83AB82",
+      "source_rect_pt": [
+        8699.306,
+        2876.517,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r3-c6": {
+      "row_from_top": 3,
+      "column_from_left": 6,
+      "cmyk_0_1": [
+        0.434,
+        0.082,
+        0.494,
+        0.0
+      ],
+      "cmyk8": [
+        111,
+        21,
+        126,
+        0
+      ],
+      "rgb8": [
+        153,
+        194,
+        155
+      ],
+      "hex": "#99C29B",
+      "source_rect_pt": [
+        8699.306,
+        2529.519,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r4-c6": {
+      "row_from_top": 4,
+      "column_from_left": 6,
+      "cmyk_0_1": [
+        0.334,
+        0.0,
+        0.431,
+        0.0
+      ],
+      "cmyk8": [
+        85,
+        0,
+        110,
+        0
+      ],
+      "rgb8": [
+        176,
+        217,
+        171
+      ],
+      "hex": "#B0D9AB",
+      "source_rect_pt": [
+        8699.306,
+        2178.382,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r5-c6": {
+      "row_from_top": 5,
+      "column_from_left": 6,
+      "cmyk_0_1": [
+        0.222,
+        0.0,
+        0.306,
+        0.0
+      ],
+      "cmyk8": [
+        57,
+        0,
+        78,
+        0
+      ],
+      "rgb8": [
+        201,
+        228,
+        193
+      ],
+      "hex": "#C9E4C1",
+      "source_rect_pt": [
+        8699.306,
+        1823.105,
+        -1268.582,
+        277.505
+      ]
+    },
+    "support-r6-c6": {
+      "row_from_top": 6,
+      "column_from_left": 6,
+      "cmyk_0_1": [
+        0.123,
+        0.0,
+        0.203,
+        0.0
+      ],
+      "cmyk8": [
+        31,
+        0,
+        52,
+        0
+      ],
+      "rgb8": [
+        225,
+        239,
+        213
+      ],
+      "hex": "#E1EFD5",
+      "source_rect_pt": [
+        8699.306,
+        1463.689,
+        -1268.582,
+        277.505
+      ]
+    }
+  }
+}

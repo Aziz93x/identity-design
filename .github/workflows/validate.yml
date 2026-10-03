@@ -1,0 +1,29 @@
+# Author: Abdulaziz Almalki
+name: Validate package
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run offline helper tests
+        run: python -m unittest discover -s tests -v
+      - name: Validate declared package files and local links
+        run: python scripts/validate_package.py

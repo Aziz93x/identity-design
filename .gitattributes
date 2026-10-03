@@ -5,6 +5,7 @@ assets/identity/** -text
 *.psd binary
 *.psb binary
 *.pptx binary
+*.docx binary
 *.png binary
 *.jpg binary
 *.ttf binary

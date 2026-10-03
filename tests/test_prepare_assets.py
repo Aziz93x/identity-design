@@ -1,6 +1,8 @@
 """Offline download tests with synthetic bytes and an in-memory response."""
 
+from contextlib import redirect_stdout
 import hashlib
+from http.client import HTTPResponse
 import importlib.util
 import io
 import json
@@ -132,6 +134,29 @@ class PrepareAssetsTests(unittest.TestCase):
             self.run_prepare(lambda request, timeout: InterruptedResponse(self.data))
         self.assert_no_partial_output()
 
+    def test_truncated_http_chunk_returns_json_failure_and_cleans_up(self):
+        # Exercise the real HTTP chunk decoder, not an exception-only mock.
+        wire = (b"HTTP/1.1 200 OK\r\nTransfer-Encoding: chunked\r\n\r\n"
+                b"100\r\n%PDF-1.7\ntruncated")
+
+        class FakeSocket:
+            def makefile(self, mode):
+                return io.BytesIO(wire)
+
+        response = HTTPResponse(FakeSocket())
+        response.begin()
+        output = io.StringIO()
+        self.network.side_effect = None
+        self.network.return_value = response
+        with patch.object(PREPARE, "MANIFEST", self.manifest), redirect_stdout(output):
+            result = PREPARE.main(["--root", str(self.root)])
+        report = json.loads(output.getvalue())
+        self.assertEqual(result, 1)
+        self.assertEqual(report["status"], "fail")
+        self.assertIn("IncompleteRead", report["error"])
+        self.network.assert_called_once()
+        self.assert_no_partial_output()
+
     def test_traversal_absolute_paths_and_other_assets_are_rejected(self):
         for relative in ("../outside.pdf", "a/../../outside.pdf", "..\\outside.pdf", "/outside.pdf", "C:/outside.pdf", "C:outside.pdf", "\\\\server\\share\\outside.pdf", "font.ttf"):
             with self.subTest(path=relative):
@@ -176,18 +201,27 @@ class PrepareAssetsTests(unittest.TestCase):
         self.assertEqual((self.root / PREPARE.GUIDE_NAME).read_bytes(), competing)
         self.assertEqual(list(self.root.glob(".identity-guide-*.part")), [])
 
-    def test_publication_refuses_existing_files_for_both_os_paths(self):
+    def test_native_publication_refuses_existing_file(self):
+        source = self.base / "staging"
+        target = self.base / "target"
+        source.write_bytes(b"new")
+        target.write_bytes(b"original")
+        with self.assertRaises(FileExistsError):
+            PREPARE.publish_without_overwrite(source, target)
+        self.assertEqual(target.read_bytes(), b"original")
+        self.assertEqual(source.read_bytes(), b"new")
+
+    def test_publication_dispatches_to_platform_appropriate_primitive(self):
         for windows in (True, False):
             with self.subTest(windows=windows):
-                source = self.base / ("staging-" + str(windows))
-                target = self.base / ("target-" + str(windows))
-                source.write_bytes(b"new")
-                target.write_bytes(b"original")
-                with patch.object(PREPARE, "IS_WINDOWS", windows):
-                    with self.assertRaises(OSError):
-                        PREPARE.publish_without_overwrite(source, target)
-                self.assertEqual(target.read_bytes(), b"original")
-                self.assertEqual(source.read_bytes(), b"new")
+                source, target = self.base / "staging", self.base / "target"
+                with patch.object(PREPARE, "IS_WINDOWS", windows), \
+                        patch.object(PREPARE.os, "rename") as rename, \
+                        patch.object(PREPARE.os, "link") as link:
+                    PREPARE.publish_without_overwrite(source, target)
+                    selected, unused = (rename, link) if windows else (link, rename)
+                    selected.assert_called_once_with(source, target)
+                    unused.assert_not_called()
 
     def test_default_destination_is_bundle_and_empty_override_fails(self):
         with patch.object(PREPARE, "BUNDLED_ROOT", self.root), patch.object(PREPARE, "MANIFEST", self.manifest):

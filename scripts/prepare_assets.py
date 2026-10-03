@@ -3,6 +3,7 @@
 
 import argparse
 import hashlib
+from http.client import HTTPException
 import json
 import os
 from pathlib import Path, PurePosixPath, PureWindowsPath
@@ -160,7 +161,7 @@ def main(argv=None):
     try:
         report = prepare_assets(args.root)
         exit_code = 0
-    except (OSError, ValueError, RuntimeError) as error:
+    except (OSError, ValueError, RuntimeError, HTTPException) as error:
         report = {"author": __author__, "status": "fail", "error": "{}: {}".format(type(error).__name__, error)}
         exit_code = 1
     if hasattr(sys.stdout, "reconfigure"):

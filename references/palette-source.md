@@ -1,5 +1,10 @@
 # لوحة المصدر: القيم ومنشؤها
 
+للاستخدام الرقمي المتسق، توفر الحزمة الآن [قيم sRGB مشتقة](../assets/digital-tokens.json)
+من العينات الـ36 في ملف الألوان الداعمة المرفق. هذه **اختيارات رقمية للحزمة وليست رموز HEX
+رسمية**. يوضح [قسم التحويل القابل لإعادة الإنتاج](#التحويل-الرقمي-القابل-لإعادة-الإنتاج)
+مصدر القيم وتعيين ملف اللون وحدود التحويل. بقيت الأصول كما هي.
+
 توافر ملفات المصدر محدد في [الفهرس](../assets/catalog.json). ملف الألوان الداعمة مرفق، وملف AI
 الرئيسي مصدر تاريخي غير مرفق. القيم أدناه موثقة من الأصل؛ استخراج بقية العينات أو كائن التدرج
 يتطلب الوصول إلى المصدر المحدد، ولا يُفترض وجوده بمجرد ورود اسمه هنا.
@@ -66,3 +71,92 @@
   معروض كاعتماد، ولا تقدّم لوحة من الويب كلوحة الهوية.
 - لم توجد مساحات ألوان مسمّاة `/Separation` أو `/DeviceN` في موارد PDF المفحوصة، وهذا لا يثبت خلو
   مكتبة العينات الخاصة في Illustrator منها. حافظ على أي عينات مسمّاة يحملها الأصل.
+
+## التحويل الرقمي القابل لإعادة الإنتاج
+
+### ما هو مثبت وما هو اختيار للحزمة
+
+- القيم الداخلة مأخوذة مباشرة من معاملات `k` في محتوى الصفحة الأولى من
+  `assets/identity/الأنماط والعناصر البصرية - Elements/الالوان الداعمة.pdf`، وعددها 36 مستطيلاً.
+  الصف الأول أعلى اللوحة، والعمود الأول أقصى اليسار. يتضمن JSON مستطيل كل عينة وقيم CMYK
+  الخام ونسختها ذات 8 بت والناتج RGB وHEX.
+- ملف اللوحة يستعمل `DeviceCMYK` ولا يحتوي ملف ICC أو `OutputIntent` يحدد وجهة طباعته.
+  لذلك لا نعرف ملف اللون الأصلي لهذه اللوحة على وجه اليقين.
+- **اختيار الحزمة:** تعيين `U.S. Web Coated (SWOP) v2` للمدخل. هذا الملف موجود فعلاً داخل
+  أصل `assets/identity/المطبوعات - Print Materials/قالب الخطابات.ai`، في تدفق PDF رقم 63.
+  وجوده في أصل الخطابات لا يثبت أنه ملف اللون الذي أنشأ لوحة العينات؛ لهذا يوثق التعيين صراحة.
+- حجم ICC المستخرج 557168 بايت، وبصمته SHA-256:
+  `35f401731df11a4eba3502af632e51d68bc394bcb7d34632a331c1ba3f4a0bf6`.
+  بصمات ملفي المصدر وموضع الكائن محفوظة في JSON لتجنب خلط إصدارات الأصول.
+- التحويل: `Pillow.ImageCms` بمحرك `LittleCMS 2.19`، إلى ملف sRGB المدمج الذي ينشئه
+  `ImageCms.createProfile("sRGB")`، بقصد لوني نسبي `relative-colorimetric` رقم 1، و`flags=0`،
+  دون تعويض النقطة السوداء. إصدارات Pillow وpypdf المستخدمة محفوظة في JSON.
+- تُحوّل كل قناة CMYK أولاً إلى 8 بت بالقاعدة `floor(channel * 255 + 0.5)`، ثم تُحوّل صورة
+  CMYK من بكسل واحد إلى RGB من 8 بت. هذا التقريب خيار تنفيذي موثق، ولا يقدم مرجع تدقيق
+  لوني عالي الدقة للطباعة. لا تتضمن العملية أخذ ألوان من لقطة شاشة.
+
+### الأدوار الرقمية الافتراضية
+
+الأسماء التالية أدوار تطبيقية للقوالب النظيفة وليست تسميات منشورة من المؤسسة. العينات الـ36
+كاملة متاحة في JSON. يحتفظ الشعار بألوان ملفه الأصلي، ولا يعاد تلوينه بهذه القيم.
+
+| الدور | عينة المصدر | sRGB مشتق |
+|---|---|---|
+| رئيسي | الصف 1، العمود 2 | `#334E78` |
+| ثانوي للزخرفة | الصف 1، العمود 5 | `#2CA6A6` |
+| إبراز | الصف 1، العمود 6 | `#729D74` |
+| متن | الصف 1، العمود 1 | `#4B4D4E` |
+| رمادي مساعد | الصف 3، العمود 1 | `#8E9293` |
+| فاصل خفيف | الصف 6، العمود 1 | `#D9D9DA` |
+| خلفية | اختيار أبيض للتطبيق | `#FFFFFF` |
+
+لا تعني قائمة الأدوار أن كل لون صالح للنص على كل خلفية. على الأبيض، تباين الثانوي نحو
+2.95:1، لذلك تستعمله القوالب للخطوط والزخرفة، وتستعمل الرئيسي والمتن للنص المقروء.
+
+### إعادة حساب القيم والتحقق من الأصل
+
+شغّل المثال التالي من جذر الحزمة الكاملة في بيئة تحتوي `pypdf` و`Pillow` مع LittleCMS.
+النسخة الخفيفة توفر النتائج الجاهزة؛ إعادة التحويل تتطلب ملفي المصدر من النسخة الكاملة.
+يقارن المثال جميع القيم بمحتوى PDF، ويفحص البصمات، ويعيد حساب كل HEX. لا يعدّل الأصول.
+إذا اختلف إصدار المحرك أو النتيجة، افحص الفرق قبل تحديث الألوان الافتراضية.
+
+```python
+import hashlib, io, json, math
+from pathlib import Path
+from pypdf import PdfReader
+from pypdf.generic import ContentStream
+from PIL import Image, ImageCms
+
+root = Path('.')
+data = json.loads((root / 'assets/digital-tokens.json').read_text('utf-8'))
+source = data['source']
+profile = data['conversion']['input_profile']
+digest = lambda b: hashlib.sha256(b).hexdigest()
+pdf_path = root / source['path']
+ai_path = root / profile['asset_path']
+assert digest(pdf_path.read_bytes()) == source['sha256']
+assert digest(ai_path.read_bytes()) == profile['asset_sha256']
+reader = PdfReader(pdf_path)
+rectangles = {}
+cmyk = None
+for operands, op in ContentStream(reader.pages[0].get_contents(), reader).operations:
+    if op == b'k':
+        cmyk = [float(v) for v in operands]
+    elif op == b're':
+        rectangles[tuple(float(v) for v in operands)] = cmyk[:]
+assert len(rectangles) == 36
+icc = PdfReader(ai_path).get_object(profile['pdf_object']).get_data()
+assert digest(icc) == profile['profile_sha256']
+transform = ImageCms.buildTransform(
+    ImageCms.ImageCmsProfile(io.BytesIO(icc)), ImageCms.createProfile('sRGB'),
+    'CMYK', 'RGB', renderingIntent=1, flags=0)
+for token in data['tokens'].values():
+    assert rectangles[tuple(token['source_rect_pt'])] == token['cmyk_0_1']
+    cmyk8 = tuple(math.floor(v * 255 + 0.5) for v in token['cmyk_0_1'])
+    assert list(cmyk8) == token['cmyk8']
+    rgb = ImageCms.applyTransform(Image.new('CMYK', (1, 1), cmyk8), transform)
+    channels = rgb.getpixel((0, 0))
+    assert list(channels) == token['rgb8']
+    assert '#' + ''.join(f'{v:02X}' for v in channels) == token['hex']
+print('36 source samples and derived sRGB values verified')
+```
