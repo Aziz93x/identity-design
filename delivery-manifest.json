@@ -1,0 +1,445 @@
+{
+  "schema": "identity-design-delivery/v1",
+  "author": "Abdulaziz Almalki",
+  "version": "1.3.0",
+  "created_at_utc": "2026-10-03T10:09:15.106026+00:00",
+  "repository": "https://github.com/Aziz93x/identity-design",
+  "original_asset_authorship": "Preserved; the package author field does not reassign authorship of original brand assets.",
+  "font_distribution": "DIN font files are not included. Configure a user-licensed font folder.",
+  "validation": {
+    "skill_structure": "passed",
+    "helper_tests_passed": 42,
+    "original_design_assets_hash_matched": 45,
+    "ready_template": {
+      "slides": 6,
+      "native_powerpoint_visual_review": "all 6 slides passed",
+      "editable_text_shapes": 54,
+      "sha256": "320325bf899b4218695a2bfc78322cd419b1adb9b6ad579a7dbb892a3ea62105"
+    },
+    "guide": {
+      "pages": 54,
+      "text_words_boxes_links_match_source": true,
+      "all_page_pixels_match_at_dpi": 144,
+      "independent_poppler_check_page": 33,
+      "source_sha256": "8fd9f9bca8025c3ba7da906437a38abe2682cd05e15c62329461ed876b945efd",
+      "sha256": "c16ce48860fa323949ca912c169948016450f5417583ca18d23782ed0cba5e19"
+    },
+    "limits": "Checks describe the packaged files and preparation tools. Font loading and new deliverables must be checked on the recipient computer. Native Adobe editing of original templates was not tested."
+  },
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 135,
+      "sha256": "70e4fd817af0129a4ac0eee69d9bc965a07ab58134f1b84f316910da7f594a7a",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 187,
+      "sha256": "6c521af0a96096ff4263590942f251ab7f96abfceecfb4f3d257ebb13c30154e",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1453,
+      "sha256": "511434c3247afd4bbb1daddbe19032d1a69700ce5b31cc466664a02349f322eb",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "README.md",
+      "bytes": 10605,
+      "sha256": "f7947e4d46b870298b836baa8aa2f2ae00df3a696bbf8be42b1a648fe0c8df9e",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 20960,
+      "sha256": "14fed184f3eb4a3ec63523e08ca3f675509257add35dd8669fdb2eccd65b7bb1",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "bytes": 438,
+      "sha256": "8797f43cc8f330625af8bdc9f994427719bb59cab633177c5521ba55224ebafa",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/README.md",
+      "bytes": 2550,
+      "sha256": "c5352b513854f4300e5bb04e9f35274a5925bc07753294b1e79f8e3b283a5105",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/catalog.json",
+      "bytes": 34903,
+      "sha256": "cb399d318d108905b13a1aa0f88b8172a119d74c47b8ec678682a47bfb045bcd",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/downloads.json",
+      "bytes": 731,
+      "sha256": "baf32578817f263a2ad11f15fc9f90b518dc84e780cacd5ef85645586ef6261c",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/COLLEGE-LOGOS-ONLY.md",
+      "bytes": 1820,
+      "sha256": "984dbbc69f92c20c2292e8685fe105165893c497641880d7c559df871c1be6c4",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/Roll-Up & Pop-Up Templates/MockUp 1 copy.psb",
+      "bytes": 17106667,
+      "sha256": "470541d3482faafcc6c9eeb183c80d5c3daed252ba3ee1c2d9cddca48ecae80b",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/Roll-Up & Pop-Up Templates/بوب اب.psb",
+      "bytes": 18166764,
+      "sha256": "a14802011f7fcd92cbece3c639c689108e95bd9b3895bf3ec3a78cd9f8868477",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/Roll-Up & Pop-Up Templates/رول اب 01.psd",
+      "bytes": 38796972,
+      "sha256": "bfb81a9956877abe71a0b7643adbc7333c85946ec6fded63fe2e773093b4136a",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/Roll-Up & Pop-Up Templates/رول اب 02.psd",
+      "bytes": 39655176,
+      "sha256": "a8bdc6194bea330d395eb6e4f9bfeb16c7961d63d0f1cb41fc98a197b02c6884",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/Screen Templates/Poster copy.ai",
+      "bytes": 8567667,
+      "sha256": "32457fcc775e63b379ca910a93fd3f10ccc616bb8deefbe65aee92d27aeeac52",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/Screen Templates/الشاشة 01.ai",
+      "bytes": 3416513,
+      "sha256": "85701c57f6c4d087778032f1adaa0cd0f98a0cc6faf46698483a514708d0c001",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/Screen Templates/تصميم الشاشة 01.psd",
+      "bytes": 15347371,
+      "sha256": "8dfb9497617b5462c927f652956baee4545ad01abf18eb8c96a2a61e0d2e2272",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/Screen Templates/شاشة عرضية.ai",
+      "bytes": 522347,
+      "sha256": "c5855acdfe82dd6672f782e478dac361a5006fcdd4984be6d58eb7b50076690b",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/Screen Templates/شاشة عرضية.psd",
+      "bytes": 6781929,
+      "sha256": "15ea382c2ce4720cb1a6b72107cdedc096893781fd3e37561ed3dd4231db53d6",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الأنماط والعناصر البصرية - Elements/01 copy.png",
+      "bytes": 176000,
+      "sha256": "8fcd6318a972571ef9d66e42b06ed94aa400adaf7b5f43dd6fa34b10c3c754a1",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الأنماط والعناصر البصرية - Elements/lines_01.png",
+      "bytes": 347649,
+      "sha256": "2be10a2302df4f093be37a3361ece2e422f59da3dfc7015470296807ad47df01",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الأنماط والعناصر البصرية - Elements/الالوان الداعمة.pdf",
+      "bytes": 373353,
+      "sha256": "6dbe822fc39d2347627adef4b61296eccfa93b1a6833acfd6fbf8525b9a09beb",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الأنماط والعناصر البصرية - Elements/قالب شبكة خلفيات 01.png",
+      "bytes": 277570,
+      "sha256": "2447172c96b11a9d6f28ff759d3365150466dc6e418ac43884cafd968bb09c81",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/التطبيقات على المنتجات - Product Applications/اكياس ورقية .psd",
+      "bytes": 4805273,
+      "sha256": "ef5b37fa3acd0889008edd7fb65ee2a95ca239f1975d46be756968c8be9ad6cd",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/التطبيقات على المنتجات - Product Applications/قالب الكاسات .psd",
+      "bytes": 3029956,
+      "sha256": "4eceb9251e750b57cac265301ca717ad9cb4ad391d6bac05f322995b14eaa3b0",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الشعارات - Logos/PNG-cropped/horizontal-color.png",
+      "bytes": 26410,
+      "sha256": "8d85a0752a392d4e09c8a1df9f173f456ffcf4568362c12d7999c3455c6d075a",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الشعارات - Logos/PNG-cropped/horizontal-white.png",
+      "bytes": 42693,
+      "sha256": "0ba7da171482ca86d31d3973bac442101214fadda3ba8aae7d5dc8e592242ff5",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الشعارات - Logos/PNG-cropped/vertical-color.png",
+      "bytes": 177980,
+      "sha256": "eb0862427471ca28a1572901789bd5a9294abcacd82781353e69c608623ff691",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الشعارات - Logos/PNG-cropped/vertical-white.png",
+      "bytes": 355532,
+      "sha256": "a20ee9efa91337e7270a92e2d1199a68148979e2fffac60b8b49adfd73b0a59f",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الشعارات - Logos/PNG/horizontal-color.png",
+      "bytes": 28123,
+      "sha256": "805e86e196faa089ac63216b13d667ffcb00190659c79f7cf001c554684a64d5",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الشعارات - Logos/PNG/horizontal-white.png",
+      "bytes": 81786,
+      "sha256": "b3d658500c290e11005c5ac6e72d6e710b952ce3dcb0f8780b34746a844b2fa2",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الشعارات - Logos/PNG/vertical-color.png",
+      "bytes": 279429,
+      "sha256": "8b67ba15d2b388652c65ccfeab5cdf5ff6a3b5ae4b14fb24991b58d8a94139c5",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الشعارات - Logos/PNG/vertical-white.png",
+      "bytes": 442272,
+      "sha256": "7e935f57f8d73036d77b05bc56133fc96ad4309b334c638ed718337d5da1f862",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الشعارات - Logos/README.md",
+      "bytes": 2023,
+      "sha256": "c11fa45da2b82693e258e0f4a1a1881a0df8b20415f536337ee77c1fefb11156",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الشعارات - Logos/SVG-editable/horizontal-color.svg",
+      "bytes": 37065,
+      "sha256": "875419d543f45b7943bda1658646f42a2da4ba99cd9cc3090fb093028e2ca405",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الشعارات - Logos/SVG-editable/horizontal-white.svg",
+      "bytes": 69426,
+      "sha256": "b5b98858aa5a077d513060937df7b99c3c7548316c12609b6430ac9fd72a35fc",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الشعارات - Logos/SVG-editable/vertical-color.svg",
+      "bytes": 203372,
+      "sha256": "cde3cddd5d13e306d8ec96ec5fa0c866ff11541b86ec20f57922f41ec3fab22d",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الشعارات - Logos/SVG-editable/vertical-white.svg",
+      "bytes": 366658,
+      "sha256": "b53fdf82cd09a9ada3ca360d87f888e34d6a1dd3c98ea51714c8477e1b2bc0cf",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الشعارات - Logos/SVG-outlined/horizontal-color.svg",
+      "bytes": 75064,
+      "sha256": "78a7d7e3a467c44a90e169680c0da109b75b7aef5a01a242fab86bcfce9d995d",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الشعارات - Logos/SVG-outlined/horizontal-white.svg",
+      "bytes": 107126,
+      "sha256": "d59897b5cd6ed3e48801c54d735926f405054316acb78d694384eb37aaa2141a",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الشعارات - Logos/SVG-outlined/vertical-color.svg",
+      "bytes": 227093,
+      "sha256": "aeb62005dcf71d0716d0ec82e1b58153abee28d37805a766864187240db40c02",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/الشعارات - Logos/SVG-outlined/vertical-white.svg",
+      "bytes": 390431,
+      "sha256": "20fdfa4be1431ec417aac58d1747464b4150ad7bc7397ab96dfbabf7f9abbf29",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/العروض التقديمية - Presentation Templates/قوالب العروض التقديمية.pptx",
+      "bytes": 8359615,
+      "sha256": "d0ba20da719aa19d807841e5cfa5a0558725f5201336212cc8b3aaf088d99b9d",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/القوالب إعلامية - Media Templates/قزالب النشر الاكتروني 01.ai",
+      "bytes": 4800811,
+      "sha256": "b96716910b85999c9d990f9152e9c1574a838a1b79e90925c3d82ce269c0b370",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/القوالب إعلامية - Media Templates/قوالب النشر الاعلامي - العمودي.pptx",
+      "bytes": 6796370,
+      "sha256": "94c0431c950788590b404ab30f47d1fc851664c9cebedc3cad2fe2abd82590ea",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/القوالب إعلامية - Media Templates/قوالب النشر الاعلامي.pptx",
+      "bytes": 2367881,
+      "sha256": "04a7bdd6aee60aaac52a09d404312d46c936b7d4047b7918cef6425e9d303597",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/القوالب إعلامية - Media Templates/قوالب النشر الاكتروني 02.ai",
+      "bytes": 8214647,
+      "sha256": "e129225f9ced769c38f41c65c3290d08fdd018245bdf1414d8300d544b9b3a79",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/المطبوعات - Print Materials/قالب الخطابات copy.pdf",
+      "bytes": 554703,
+      "sha256": "92d2c5ebe0d6b71e5d7f72bf0eb4667aae7a4860fce6f49adebb1aa20cdc2762",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/المطبوعات - Print Materials/قالب الخطابات.ai",
+      "bytes": 1754698,
+      "sha256": "6e72c72fec75a984ca863f61610795cd60fe2c37638cff8d5f2bba589efbd3c9",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/المطبوعات - Print Materials/قالب نوتة.ai",
+      "bytes": 240173,
+      "sha256": "f6d8f200db0dc2445d3432045386428914e53a97829fd3729f8c4475e004b990",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/المطبوعات - Print Materials/نوتة 01.psd",
+      "bytes": 3840940,
+      "sha256": "4c11ef03d9148f4824763467d571e90169b63ab14b490cfcd952d8b569408238",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/شهادات التكريم - Recognition Certificates/شهادة copy 2.ai",
+      "bytes": 1276935,
+      "sha256": "19d5e7b57deb1ab7f8a30c575f9983b22e96ab21583094896b393f3adf448cf9",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/شهادات التكريم - Recognition Certificates/شهادة copy.psd",
+      "bytes": 7558180,
+      "sha256": "d75dd3bd9ec70fadde0c052fc29445790b53dbcc294d94a94c28c04867375b37",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/قوالب الدروع -Plaque Templates/قالب دروع 01.ai",
+      "bytes": 606329,
+      "sha256": "55ef69921abca371a33c0afb91c9f71ccedfdab9bc05c0c2428540515fa61c52",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/قوالب الفولدرات - Folder Templates/Folder_02 copy copy.pdf",
+      "bytes": 1465084,
+      "sha256": "0cd6fd4d5f8a3e7fbdc120a561d3e50aefb0c062b1f8b0b0b2a3a78349527365",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/قوالب الفولدرات - Folder Templates/Folder_02 copy.ai",
+      "bytes": 2478938,
+      "sha256": "081c0e1cb194f77caccb5f04c65169a92fbc22257ea023a70eacd3d1e95b7207",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/قوالب جاهزة/قالب التدريب المصور.pptx",
+      "bytes": 5089146,
+      "sha256": "320325bf899b4218695a2bfc78322cd419b1adb9b6ad579a7dbb892a3ea62105",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "assets/identity/ملف الهوية البصرية مفتوح (5).pdf",
+      "bytes": 220109793,
+      "sha256": "c16ce48860fa323949ca912c169948016450f5417583ca18d23782ed0cba5e19",
+      "distribution": "release_download_and_full_zip"
+    },
+    {
+      "path": "references/asset-map.md",
+      "bytes": 22368,
+      "sha256": "6b80d42c5e087a3942b8f3a4f8ecfd43eba309727b49ef94403a095f4554d412",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "references/illustrated-presentations.md",
+      "bytes": 11996,
+      "sha256": "4cb42edba650b6a435f32917ce892d4879d7ceb6f6e2fa32d5c06b68376cd68e",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "references/illustrator-sources.md",
+      "bytes": 10452,
+      "sha256": "ef6b156996e9238a1a1ad38afb316edd66103a8684f2e5c169dbd173def548d6",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "references/official-arabic.md",
+      "bytes": 5679,
+      "sha256": "b7a071204c5c133da494566ad1409f610b6be945e047503a3c343ce8f560fd8f",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "references/palette-source.md",
+      "bytes": 5528,
+      "sha256": "4f1418482d454b98c55e46dbc71976cac386df8f0f772f496bf86251d619721b",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "references/verification-results.md",
+      "bytes": 22757,
+      "sha256": "5162743ce2a72bfc24fc41a5f48b16f3a04c77ebe679cbb7d51a0214c2bf9f33",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "references/visual-rules.md",
+      "bytes": 19825,
+      "sha256": "59d1f7451b70fad3d3379ba2f7a34e848d0e6e5400222eaba71340f0b7a14a37",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "scripts/preflight.py",
+      "bytes": 8130,
+      "sha256": "a7b0d91c074c4befe4967dcf0d4996dbdd0bfe5ed8da4cb0bdcd9958bf633dd3",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "scripts/prepare_assets.py",
+      "bytes": 8341,
+      "sha256": "744d28036c36b20495d3fdb97d573d0e5cd7f0ba0fd2c41ee4ca8689409f47de",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "tests/test_preflight.py",
+      "bytes": 13152,
+      "sha256": "eca213ce43a5061b0ab5570628bf2df1015146d23aab75913bf148bb617d0738",
+      "distribution": "repository_and_full_zip"
+    },
+    {
+      "path": "tests/test_prepare_assets.py",
+      "bytes": 11220,
+      "sha256": "6aa4c66250368af04fbc04d6786b5d7dbb3abdffc08e9cce1a430effda54af77",
+      "distribution": "repository_and_full_zip"
+    }
+  ]
+}

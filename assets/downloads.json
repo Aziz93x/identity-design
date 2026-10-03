@@ -1,0 +1,16 @@
+{
+  "author": "Abdulaziz Almalki",
+  "version": "1.3.0",
+  "downloads": [
+    {
+      "id": "guide",
+      "path": "ملف الهوية البصرية مفتوح (5).pdf",
+      "url": "https://github.com/Aziz93x/identity-design/releases/download/v1.3.0/identity-guide.pdf",
+      "bytes": 220109793,
+      "sha256": "c16ce48860fa323949ca912c169948016450f5417583ca18d23782ed0cba5e19",
+      "pages": 54,
+      "source_sha256": "8fd9f9bca8025c3ba7da906437a38abe2682cd05e15c62329461ed876b945efd",
+      "transformation": "Removed private Illustrator editing data and losslessly recompressed PDF streams. Page text, word positions, page boxes, links and all rendered pixels at 144 dpi match the source. Source preserved."
+    }
+  ]
+}

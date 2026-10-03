@@ -1,0 +1,810 @@
+{
+  "author": "Abdulaziz Almalki",
+  "version": "1.3.0",
+  "asset_root": "identity",
+  "source_audit_date": "2026-09-28",
+  "groups": {
+    "ready_presentations": {
+      "label_ar": "قالب التدريب المصور الجاهز",
+      "preferred_for": [
+        "illustrated_training_presentation"
+      ],
+      "aspect_ratio": "16:9",
+      "slides": {
+        "cover": 1,
+        "text_content": 2,
+        "image_with_text": 3,
+        "comparison": 4,
+        "three_scene_example": 5,
+        "closing": 6
+      },
+      "picture_areas": "Editable native text boxes to replace with pictures; not click-to-insert placeholders.",
+      "animations": "Apply the task-specific manual sequence after filling the content."
+    },
+    "presentations": {
+      "label_ar": "قالب العروض الأصلي",
+      "aspect_ratio": "16:9",
+      "source_slides": 19,
+      "cover_slides": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "content_slides": [
+        2,
+        4,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "icon_library_slides": [
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    "social_posts": {
+      "label_ar": "المنشورات الإعلامية",
+      "variants": [
+        {
+          "path": "القوالب إعلامية - Media Templates/قوالب النشر الاعلامي.pptx",
+          "aspect_ratio": "1:1",
+          "content_slides": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "path": "القوالب إعلامية - Media Templates/قوالب النشر الاعلامي - العمودي.pptx",
+          "aspect_ratio": "approximately 9:16",
+          "content_slides": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ]
+    },
+    "documents": {
+      "label_ar": "المستندات والخطابات والنوتة",
+      "native_word_template": false,
+      "usage_note_ar": "اشتق تخطيط المستند من أصل الخطابات أو العناصر، مع نص عربي حي؛ لا تمدد شريحة إلى A4."
+    },
+    "certificates": {
+      "label_ar": "الشهادات",
+      "native_source_formats": [
+        "AI",
+        "PSD"
+      ]
+    },
+    "plaques": {
+      "label_ar": "الدروع",
+      "native_source_formats": [
+        "AI"
+      ]
+    },
+    "folders": {
+      "label_ar": "الفولدر",
+      "sheet_mm": [
+        440,
+        300
+      ],
+      "usage_note_ar": "مقاس لوح، لا ديلاين معتمد؛ راجع الشعار والبيانات ومقصد QR."
+    },
+    "screens": {
+      "label_ar": "الشاشات والملصقات",
+      "variants": [
+        "landscape",
+        "portrait"
+      ]
+    },
+    "rollup_popup": {
+      "label_ar": "الرول أب والبوب أب",
+      "native_source_formats": [
+        "PSD",
+        "PSB"
+      ]
+    },
+    "products": {
+      "label_ar": "تطبيقات الأكياس والكاسات",
+      "native_source_formats": [
+        "PSD"
+      ]
+    },
+    "logos": {
+      "label_ar": "الشعارات المركبة",
+      "variants": [
+        "horizontal-color",
+        "horizontal-white",
+        "vertical-color",
+        "vertical-white"
+      ],
+      "formats": [
+        "PNG",
+        "PNG-cropped",
+        "SVG-outlined",
+        "SVG-editable"
+      ],
+      "preferred_for_powerpoint": [
+        "PNG",
+        "SVG-outlined"
+      ]
+    },
+    "elements": {
+      "label_ar": "الخلفيات والعناصر ولوحة الألوان"
+    },
+    "guide": {
+      "label_ar": "دليل الهوية",
+      "pages": 54,
+      "page_numbers_follow": "PDF"
+    },
+    "policies": {
+      "label_ar": "تعليمات الشعارات"
+    }
+  },
+  "files": [
+    {
+      "path": "الشعارات - Logos/PNG/horizontal-color.png",
+      "group": "logos",
+      "bytes": 28123,
+      "sha256": "805e86e196faa089ac63216b13d667ffcb00190659c79f7cf001c554684a64d5",
+      "source_sha256": "805e86e196faa089ac63216b13d667ffcb00190659c79f7cf001c554684a64d5",
+      "preserved_original": true,
+      "audit_id": "F057",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": false
+    },
+    {
+      "path": "الشعارات - Logos/PNG/horizontal-white.png",
+      "group": "logos",
+      "bytes": 81786,
+      "sha256": "b3d658500c290e11005c5ac6e72d6e710b952ce3dcb0f8780b34746a844b2fa2",
+      "source_sha256": "b3d658500c290e11005c5ac6e72d6e710b952ce3dcb0f8780b34746a844b2fa2",
+      "preserved_original": true,
+      "audit_id": "F058",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": false
+    },
+    {
+      "path": "الشعارات - Logos/PNG/vertical-color.png",
+      "group": "logos",
+      "bytes": 279429,
+      "sha256": "8b67ba15d2b388652c65ccfeab5cdf5ff6a3b5ae4b14fb24991b58d8a94139c5",
+      "source_sha256": "8b67ba15d2b388652c65ccfeab5cdf5ff6a3b5ae4b14fb24991b58d8a94139c5",
+      "preserved_original": true,
+      "audit_id": "F059",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": false
+    },
+    {
+      "path": "الشعارات - Logos/PNG/vertical-white.png",
+      "group": "logos",
+      "bytes": 442272,
+      "sha256": "7e935f57f8d73036d77b05bc56133fc96ad4309b334c638ed718337d5da1f862",
+      "source_sha256": "7e935f57f8d73036d77b05bc56133fc96ad4309b334c638ed718337d5da1f862",
+      "preserved_original": true,
+      "audit_id": "F060",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": false
+    },
+    {
+      "path": "الشعارات - Logos/PNG-cropped/horizontal-color.png",
+      "group": "logos",
+      "bytes": 26410,
+      "sha256": "8d85a0752a392d4e09c8a1df9f173f456ffcf4568362c12d7999c3455c6d075a",
+      "source_sha256": "8d85a0752a392d4e09c8a1df9f173f456ffcf4568362c12d7999c3455c6d075a",
+      "preserved_original": true,
+      "audit_id": "F061",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": false
+    },
+    {
+      "path": "الشعارات - Logos/PNG-cropped/horizontal-white.png",
+      "group": "logos",
+      "bytes": 42693,
+      "sha256": "0ba7da171482ca86d31d3973bac442101214fadda3ba8aae7d5dc8e592242ff5",
+      "source_sha256": "0ba7da171482ca86d31d3973bac442101214fadda3ba8aae7d5dc8e592242ff5",
+      "preserved_original": true,
+      "audit_id": "F062",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": false
+    },
+    {
+      "path": "الشعارات - Logos/PNG-cropped/vertical-color.png",
+      "group": "logos",
+      "bytes": 177980,
+      "sha256": "eb0862427471ca28a1572901789bd5a9294abcacd82781353e69c608623ff691",
+      "source_sha256": "eb0862427471ca28a1572901789bd5a9294abcacd82781353e69c608623ff691",
+      "preserved_original": true,
+      "audit_id": "F063",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": false
+    },
+    {
+      "path": "الشعارات - Logos/PNG-cropped/vertical-white.png",
+      "group": "logos",
+      "bytes": 355532,
+      "sha256": "a20ee9efa91337e7270a92e2d1199a68148979e2fffac60b8b49adfd73b0a59f",
+      "source_sha256": "a20ee9efa91337e7270a92e2d1199a68148979e2fffac60b8b49adfd73b0a59f",
+      "preserved_original": true,
+      "audit_id": "F064",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": false
+    },
+    {
+      "path": "الشعارات - Logos/SVG-outlined/horizontal-color.svg",
+      "group": "logos",
+      "bytes": 75064,
+      "sha256": "78a7d7e3a467c44a90e169680c0da109b75b7aef5a01a242fab86bcfce9d995d",
+      "source_sha256": "78a7d7e3a467c44a90e169680c0da109b75b7aef5a01a242fab86bcfce9d995d",
+      "preserved_original": true,
+      "audit_id": "F076",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": false
+    },
+    {
+      "path": "الشعارات - Logos/SVG-outlined/horizontal-white.svg",
+      "group": "logos",
+      "bytes": 107126,
+      "sha256": "d59897b5cd6ed3e48801c54d735926f405054316acb78d694384eb37aaa2141a",
+      "source_sha256": "d59897b5cd6ed3e48801c54d735926f405054316acb78d694384eb37aaa2141a",
+      "preserved_original": true,
+      "audit_id": "F077",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": false
+    },
+    {
+      "path": "الشعارات - Logos/SVG-outlined/vertical-color.svg",
+      "group": "logos",
+      "bytes": 227093,
+      "sha256": "aeb62005dcf71d0716d0ec82e1b58153abee28d37805a766864187240db40c02",
+      "source_sha256": "aeb62005dcf71d0716d0ec82e1b58153abee28d37805a766864187240db40c02",
+      "preserved_original": true,
+      "audit_id": "F078",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": false
+    },
+    {
+      "path": "الشعارات - Logos/SVG-outlined/vertical-white.svg",
+      "group": "logos",
+      "bytes": 390431,
+      "sha256": "20fdfa4be1431ec417aac58d1747464b4150ad7bc7397ab96dfbabf7f9abbf29",
+      "source_sha256": "20fdfa4be1431ec417aac58d1747464b4150ad7bc7397ab96dfbabf7f9abbf29",
+      "preserved_original": true,
+      "audit_id": "F079",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": false
+    },
+    {
+      "path": "الشعارات - Logos/SVG-editable/horizontal-color.svg",
+      "group": "logos",
+      "bytes": 37065,
+      "sha256": "875419d543f45b7943bda1658646f42a2da4ba99cd9cc3090fb093028e2ca405",
+      "source_sha256": "875419d543f45b7943bda1658646f42a2da4ba99cd9cc3090fb093028e2ca405",
+      "preserved_original": true,
+      "audit_id": "F072",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": false
+    },
+    {
+      "path": "الشعارات - Logos/SVG-editable/horizontal-white.svg",
+      "group": "logos",
+      "bytes": 69426,
+      "sha256": "b5b98858aa5a077d513060937df7b99c3c7548316c12609b6430ac9fd72a35fc",
+      "source_sha256": "b5b98858aa5a077d513060937df7b99c3c7548316c12609b6430ac9fd72a35fc",
+      "preserved_original": true,
+      "audit_id": "F073",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": false
+    },
+    {
+      "path": "الشعارات - Logos/SVG-editable/vertical-color.svg",
+      "group": "logos",
+      "bytes": 203372,
+      "sha256": "cde3cddd5d13e306d8ec96ec5fa0c866ff11541b86ec20f57922f41ec3fab22d",
+      "source_sha256": "cde3cddd5d13e306d8ec96ec5fa0c866ff11541b86ec20f57922f41ec3fab22d",
+      "preserved_original": true,
+      "audit_id": "F074",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": false
+    },
+    {
+      "path": "الشعارات - Logos/SVG-editable/vertical-white.svg",
+      "group": "logos",
+      "bytes": 366658,
+      "sha256": "b53fdf82cd09a9ada3ca360d87f888e34d6a1dd3c98ea51714c8477e1b2bc0cf",
+      "source_sha256": "b53fdf82cd09a9ada3ca360d87f888e34d6a1dd3c98ea51714c8477e1b2bc0cf",
+      "preserved_original": true,
+      "audit_id": "F075",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": false
+    },
+    {
+      "path": "الأنماط والعناصر البصرية - Elements/01 copy.png",
+      "group": "elements",
+      "bytes": 176000,
+      "sha256": "8fcd6318a972571ef9d66e42b06ed94aa400adaf7b5f43dd6fa34b10c3c754a1",
+      "source_sha256": "8fcd6318a972571ef9d66e42b06ed94aa400adaf7b5f43dd6fa34b10c3c754a1",
+      "preserved_original": true,
+      "audit_id": "F028",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": false
+    },
+    {
+      "path": "الأنماط والعناصر البصرية - Elements/lines_01.png",
+      "group": "elements",
+      "bytes": 347649,
+      "sha256": "2be10a2302df4f093be37a3361ece2e422f59da3dfc7015470296807ad47df01",
+      "source_sha256": "2be10a2302df4f093be37a3361ece2e422f59da3dfc7015470296807ad47df01",
+      "preserved_original": true,
+      "audit_id": "F029",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": false
+    },
+    {
+      "path": "الأنماط والعناصر البصرية - Elements/قالب شبكة خلفيات 01.png",
+      "group": "elements",
+      "bytes": 277570,
+      "sha256": "2447172c96b11a9d6f28ff759d3365150466dc6e418ac43884cafd968bb09c81",
+      "source_sha256": "2447172c96b11a9d6f28ff759d3365150466dc6e418ac43884cafd968bb09c81",
+      "preserved_original": true,
+      "audit_id": "F033",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": false
+    },
+    {
+      "path": "الأنماط والعناصر البصرية - Elements/الالوان الداعمة.pdf",
+      "group": "elements",
+      "bytes": 373353,
+      "sha256": "6dbe822fc39d2347627adef4b61296eccfa93b1a6833acfd6fbf8525b9a09beb",
+      "source_sha256": "6dbe822fc39d2347627adef4b61296eccfa93b1a6833acfd6fbf8525b9a09beb",
+      "preserved_original": true,
+      "audit_id": "F030",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": false
+    },
+    {
+      "path": "العروض التقديمية - Presentation Templates/قوالب العروض التقديمية.pptx",
+      "group": "presentations",
+      "bytes": 8359615,
+      "sha256": "d0ba20da719aa19d807841e5cfa5a0558725f5201336212cc8b3aaf088d99b9d",
+      "source_sha256": "d0ba20da719aa19d807841e5cfa5a0558725f5201336212cc8b3aaf088d99b9d",
+      "preserved_original": true,
+      "audit_id": "F092",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": true,
+      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+    },
+    {
+      "path": "القوالب إعلامية - Media Templates/قوالب النشر الاعلامي.pptx",
+      "group": "social_posts",
+      "bytes": 2367881,
+      "sha256": "04a7bdd6aee60aaac52a09d404312d46c936b7d4047b7918cef6425e9d303597",
+      "source_sha256": "04a7bdd6aee60aaac52a09d404312d46c936b7d4047b7918cef6425e9d303597",
+      "preserved_original": true,
+      "audit_id": "F103",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": true,
+      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+    },
+    {
+      "path": "القوالب إعلامية - Media Templates/قوالب النشر الاعلامي - العمودي.pptx",
+      "group": "social_posts",
+      "bytes": 6796370,
+      "sha256": "94c0431c950788590b404ab30f47d1fc851664c9cebedc3cad2fe2abd82590ea",
+      "source_sha256": "94c0431c950788590b404ab30f47d1fc851664c9cebedc3cad2fe2abd82590ea",
+      "preserved_original": true,
+      "audit_id": "F102",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": true,
+      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+    },
+    {
+      "path": "القوالب إعلامية - Media Templates/قزالب النشر الاكتروني 01.ai",
+      "group": "social_posts",
+      "bytes": 4800811,
+      "sha256": "b96716910b85999c9d990f9152e9c1574a838a1b79e90925c3d82ce269c0b370",
+      "source_sha256": "b96716910b85999c9d990f9152e9c1574a838a1b79e90925c3d82ce269c0b370",
+      "preserved_original": true,
+      "audit_id": "F099",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": true,
+      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+    },
+    {
+      "path": "القوالب إعلامية - Media Templates/قوالب النشر الاكتروني 02.ai",
+      "group": "social_posts",
+      "bytes": 8214647,
+      "sha256": "e129225f9ced769c38f41c65c3290d08fdd018245bdf1414d8300d544b9b3a79",
+      "source_sha256": "e129225f9ced769c38f41c65c3290d08fdd018245bdf1414d8300d544b9b3a79",
+      "preserved_original": true,
+      "audit_id": "F104",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": true,
+      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+    },
+    {
+      "path": "المطبوعات - Print Materials/قالب الخطابات.ai",
+      "group": "documents",
+      "bytes": 1754698,
+      "sha256": "6e72c72fec75a984ca863f61610795cd60fe2c37638cff8d5f2bba589efbd3c9",
+      "source_sha256": "6e72c72fec75a984ca863f61610795cd60fe2c37638cff8d5f2bba589efbd3c9",
+      "preserved_original": true,
+      "audit_id": "F113",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": true,
+      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+    },
+    {
+      "path": "المطبوعات - Print Materials/قالب الخطابات copy.pdf",
+      "group": "documents",
+      "bytes": 554703,
+      "sha256": "92d2c5ebe0d6b71e5d7f72bf0eb4667aae7a4860fce6f49adebb1aa20cdc2762",
+      "source_sha256": "92d2c5ebe0d6b71e5d7f72bf0eb4667aae7a4860fce6f49adebb1aa20cdc2762",
+      "preserved_original": true,
+      "audit_id": "F112",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": true,
+      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+    },
+    {
+      "path": "المطبوعات - Print Materials/قالب نوتة.ai",
+      "group": "documents",
+      "bytes": 240173,
+      "sha256": "f6d8f200db0dc2445d3432045386428914e53a97829fd3729f8c4475e004b990",
+      "source_sha256": "f6d8f200db0dc2445d3432045386428914e53a97829fd3729f8c4475e004b990",
+      "preserved_original": true,
+      "audit_id": "F115",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": true,
+      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+    },
+    {
+      "path": "المطبوعات - Print Materials/نوتة 01.psd",
+      "group": "documents",
+      "bytes": 3840940,
+      "sha256": "4c11ef03d9148f4824763467d571e90169b63ab14b490cfcd952d8b569408238",
+      "source_sha256": "4c11ef03d9148f4824763467d571e90169b63ab14b490cfcd952d8b569408238",
+      "preserved_original": true,
+      "audit_id": "F117",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": true,
+      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+    },
+    {
+      "path": "شهادات التكريم - Recognition Certificates/شهادة copy 2.ai",
+      "group": "certificates",
+      "bytes": 1276935,
+      "sha256": "19d5e7b57deb1ab7f8a30c575f9983b22e96ab21583094896b393f3adf448cf9",
+      "source_sha256": "19d5e7b57deb1ab7f8a30c575f9983b22e96ab21583094896b393f3adf448cf9",
+      "preserved_original": true,
+      "audit_id": "F119",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": true,
+      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+    },
+    {
+      "path": "شهادات التكريم - Recognition Certificates/شهادة copy.psd",
+      "group": "certificates",
+      "bytes": 7558180,
+      "sha256": "d75dd3bd9ec70fadde0c052fc29445790b53dbcc294d94a94c28c04867375b37",
+      "source_sha256": "d75dd3bd9ec70fadde0c052fc29445790b53dbcc294d94a94c28c04867375b37",
+      "preserved_original": true,
+      "audit_id": "F122",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": true,
+      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+    },
+    {
+      "path": "قوالب الدروع -Plaque Templates/قالب دروع 01.ai",
+      "group": "plaques",
+      "bytes": 606329,
+      "sha256": "55ef69921abca371a33c0afb91c9f71ccedfdab9bc05c0c2428540515fa61c52",
+      "source_sha256": "55ef69921abca371a33c0afb91c9f71ccedfdab9bc05c0c2428540515fa61c52",
+      "preserved_original": true,
+      "audit_id": "F128",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": true,
+      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+    },
+    {
+      "path": "قوالب الفولدرات - Folder Templates/Folder_02 copy.ai",
+      "group": "folders",
+      "bytes": 2478938,
+      "sha256": "081c0e1cb194f77caccb5f04c65169a92fbc22257ea023a70eacd3d1e95b7207",
+      "source_sha256": "081c0e1cb194f77caccb5f04c65169a92fbc22257ea023a70eacd3d1e95b7207",
+      "preserved_original": true,
+      "audit_id": "F133",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": true,
+      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+    },
+    {
+      "path": "قوالب الفولدرات - Folder Templates/Folder_02 copy copy.pdf",
+      "group": "folders",
+      "bytes": 1465084,
+      "sha256": "0cd6fd4d5f8a3e7fbdc120a561d3e50aefb0c062b1f8b0b0b2a3a78349527365",
+      "source_sha256": "0cd6fd4d5f8a3e7fbdc120a561d3e50aefb0c062b1f8b0b0b2a3a78349527365",
+      "preserved_original": true,
+      "audit_id": "F132",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": true,
+      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+    },
+    {
+      "path": "Screen Templates/شاشة عرضية.ai",
+      "group": "screens",
+      "bytes": 522347,
+      "sha256": "c5855acdfe82dd6672f782e478dac361a5006fcdd4984be6d58eb7b50076690b",
+      "source_sha256": "c5855acdfe82dd6672f782e478dac361a5006fcdd4984be6d58eb7b50076690b",
+      "preserved_original": true,
+      "audit_id": "F024",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": true,
+      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+    },
+    {
+      "path": "Screen Templates/شاشة عرضية.psd",
+      "group": "screens",
+      "bytes": 6781929,
+      "sha256": "15ea382c2ce4720cb1a6b72107cdedc096893781fd3e37561ed3dd4231db53d6",
+      "source_sha256": "15ea382c2ce4720cb1a6b72107cdedc096893781fd3e37561ed3dd4231db53d6",
+      "preserved_original": true,
+      "audit_id": "F027",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": true,
+      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+    },
+    {
+      "path": "Screen Templates/الشاشة 01.ai",
+      "group": "screens",
+      "bytes": 3416513,
+      "sha256": "85701c57f6c4d087778032f1adaa0cd0f98a0cc6faf46698483a514708d0c001",
+      "source_sha256": "85701c57f6c4d087778032f1adaa0cd0f98a0cc6faf46698483a514708d0c001",
+      "preserved_original": true,
+      "audit_id": "F020",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": true,
+      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+    },
+    {
+      "path": "Screen Templates/تصميم الشاشة 01.psd",
+      "group": "screens",
+      "bytes": 15347371,
+      "sha256": "8dfb9497617b5462c927f652956baee4545ad01abf18eb8c96a2a61e0d2e2272",
+      "source_sha256": "8dfb9497617b5462c927f652956baee4545ad01abf18eb8c96a2a61e0d2e2272",
+      "preserved_original": true,
+      "audit_id": "F023",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": true,
+      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+    },
+    {
+      "path": "Screen Templates/Poster copy.ai",
+      "group": "screens",
+      "bytes": 8567667,
+      "sha256": "32457fcc775e63b379ca910a93fd3f10ccc616bb8deefbe65aee92d27aeeac52",
+      "source_sha256": "32457fcc775e63b379ca910a93fd3f10ccc616bb8deefbe65aee92d27aeeac52",
+      "preserved_original": true,
+      "audit_id": "F016",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": true,
+      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+    },
+    {
+      "path": "Roll-Up & Pop-Up Templates/رول اب 01.psd",
+      "group": "rollup_popup",
+      "bytes": 38796972,
+      "sha256": "bfb81a9956877abe71a0b7643adbc7333c85946ec6fded63fe2e773093b4136a",
+      "source_sha256": "bfb81a9956877abe71a0b7643adbc7333c85946ec6fded63fe2e773093b4136a",
+      "preserved_original": true,
+      "audit_id": "F008",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": true,
+      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+    },
+    {
+      "path": "Roll-Up & Pop-Up Templates/رول اب 02.psd",
+      "group": "rollup_popup",
+      "bytes": 39655176,
+      "sha256": "a8bdc6194bea330d395eb6e4f9bfeb16c7961d63d0f1cb41fc98a197b02c6884",
+      "source_sha256": "a8bdc6194bea330d395eb6e4f9bfeb16c7961d63d0f1cb41fc98a197b02c6884",
+      "preserved_original": true,
+      "audit_id": "F010",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": true,
+      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+    },
+    {
+      "path": "Roll-Up & Pop-Up Templates/MockUp 1 copy.psb",
+      "group": "rollup_popup",
+      "bytes": 17106667,
+      "sha256": "470541d3482faafcc6c9eeb183c80d5c3daed252ba3ee1c2d9cddca48ecae80b",
+      "source_sha256": "470541d3482faafcc6c9eeb183c80d5c3daed252ba3ee1c2d9cddca48ecae80b",
+      "preserved_original": true,
+      "audit_id": "F002",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": true,
+      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+    },
+    {
+      "path": "Roll-Up & Pop-Up Templates/بوب اب.psb",
+      "group": "rollup_popup",
+      "bytes": 18166764,
+      "sha256": "a14802011f7fcd92cbece3c639c689108e95bd9b3895bf3ec3a78cd9f8868477",
+      "source_sha256": "a14802011f7fcd92cbece3c639c689108e95bd9b3895bf3ec3a78cd9f8868477",
+      "preserved_original": true,
+      "audit_id": "F005",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": true,
+      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+    },
+    {
+      "path": "التطبيقات على المنتجات - Product Applications/اكياس ورقية .psd",
+      "group": "products",
+      "bytes": 4805273,
+      "sha256": "ef5b37fa3acd0889008edd7fb65ee2a95ca239f1975d46be756968c8be9ad6cd",
+      "source_sha256": "ef5b37fa3acd0889008edd7fb65ee2a95ca239f1975d46be756968c8be9ad6cd",
+      "preserved_original": true,
+      "audit_id": "F039",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": true,
+      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+    },
+    {
+      "path": "التطبيقات على المنتجات - Product Applications/قالب الكاسات .psd",
+      "group": "products",
+      "bytes": 3029956,
+      "sha256": "4eceb9251e750b57cac265301ca717ad9cb4ad391d6bac05f322995b14eaa3b0",
+      "source_sha256": "4eceb9251e750b57cac265301ca717ad9cb4ad391d6bac05f322995b14eaa3b0",
+      "preserved_original": true,
+      "audit_id": "F041",
+      "availability": "bundled",
+      "rights": "original_asset_owners",
+      "requires_task_cleanup": true,
+      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+    },
+    {
+      "path": "COLLEGE-LOGOS-ONLY.md",
+      "group": "policies",
+      "availability": "bundled",
+      "bytes": 1820,
+      "sha256": "984dbbc69f92c20c2292e8685fe105165893c497641880d7c559df871c1be6c4",
+      "source_sha256": "58473ed2ea6c1c1c118c4b9f216c125530b314de2296f2192a3600a636a3e0a7",
+      "preserved_original": false,
+      "transformation": "Portable instructions; removed machine-specific and unavailable review references.",
+      "author": "Abdulaziz Almalki",
+      "audit_id": "F001"
+    },
+    {
+      "path": "الشعارات - Logos/README.md",
+      "group": "policies",
+      "availability": "bundled",
+      "bytes": 2023,
+      "sha256": "c11fa45da2b82693e258e0f4a1a1881a0df8b20415f536337ee77c1fefb11156",
+      "source_sha256": "d511d27795e85688acbb6604ce5ef41b653cb0a6f4696c425152e2f8978d08a4",
+      "preserved_original": false,
+      "transformation": "Portable instructions; removed machine-specific and unavailable review references.",
+      "author": "Abdulaziz Almalki",
+      "audit_id": "F071"
+    },
+    {
+      "path": "قوالب جاهزة/قالب التدريب المصور.pptx",
+      "group": "ready_presentations",
+      "availability": "bundled",
+      "bytes": 5089146,
+      "sha256": "320325bf899b4218695a2bfc78322cd419b1adb9b6ad579a7dbb892a3ea62105",
+      "preserved_original": false,
+      "author": "Abdulaziz Almalki",
+      "source_description_ar": "قالب مشتق من العرض التدريبي المصور المعتمد، مع حفظ الهوية وإزالة المحتوى العلمي الخاص بالدورة.",
+      "requires_task_cleanup": false,
+      "requires_content_population": true
+    },
+    {
+      "id": "guide",
+      "path": "ملف الهوية البصرية مفتوح (5).pdf",
+      "url": "https://github.com/Aziz93x/identity-design/releases/download/v1.3.0/identity-guide.pdf",
+      "bytes": 220109793,
+      "sha256": "c16ce48860fa323949ca912c169948016450f5417583ca18d23782ed0cba5e19",
+      "pages": 54,
+      "source_sha256": "8fd9f9bca8025c3ba7da906437a38abe2682cd05e15c62329461ed876b945efd",
+      "transformation": "Removed private Illustrator editing data and losslessly recompressed PDF streams. Page text, word positions, page boxes, links and all rendered pixels at 144 dpi match the source. Source preserved.",
+      "group": "guide",
+      "availability": "release_download",
+      "author": "Abdulaziz Almalki",
+      "rights": "original_asset_owners",
+      "setup_command": "python scripts/prepare_assets.py"
+    }
+  ],
+  "fonts": {
+    "environment_variable": "IDENTITY_DESIGN_FONT_ROOT",
+    "cli_option": "--font-root",
+    "files": [
+      {
+        "filename": "DINNextLTArabic-Regular-3.ttf",
+        "source_sha256": "21128d204de2676f2479dedfef937ef479fe4dbc106c2708cbf9e2afa1318e03",
+        "availability": "user_licensed_font",
+        "required_by_basic_preflight": true,
+        "reason": "The source font license prohibits copying or distribution without additional license rights."
+      },
+      {
+        "filename": "alfont_com_AlFont_com_DINNextLTArabic-Medium.ttf",
+        "source_sha256": "2d472fae50ec701cfbf4f1b69d8677676dbf18a4e62e5eacda0badf54715e9ab",
+        "availability": "user_licensed_font",
+        "required_by_basic_preflight": true,
+        "reason": "The source font license prohibits copying or distribution without additional license rights."
+      },
+      {
+        "filename": "DINNEXTLTARABIC-LIGHT-2-2.ttf",
+        "source_sha256": "c0dbf35118ff693eb22b7c996ee63351b75d4c427c763960863d873e2c355b6c",
+        "availability": "user_licensed_font",
+        "required_by_basic_preflight": false,
+        "reason": "The source font license prohibits copying or distribution without additional license rights."
+      }
+    ]
+  },
+  "not_included_ar": [
+    "ملف Illustrator الرئيسي الكبير وبياناته الخاصة",
+    "أرشيف الصور وتكرارات EPS",
+    "صور المباني ومحاكاة المنتجات غير اللازمة للتشغيل",
+    "خواتيم الفيديو التي تحمل شعار المؤسسة العام",
+    "سجلات QA المحلية وبيانات أمثلة الموظفين وبطاقاتهم"
+  ],
+  "validation_scope_ar": "فحوص البصمة تحفظ بايتات الأصول الأصلية. دليل PDF مشتق مطابق بصرياً ونصياً. القالب الجاهز يفحص في PowerPoint؛ بقية مصادر Adobe لم يختبر تحريرها وحفظها داخل Adobe."
+}

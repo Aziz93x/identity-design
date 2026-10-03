@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+desktop.ini
+.env
+.venv/
+local-assets/
+output/
+outputs/
+/assets/identity/ملف الهوية البصرية مفتوح (5).pdf
+*.download
+*.part

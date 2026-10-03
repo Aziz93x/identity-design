@@ -1,0 +1,9 @@
+* text=auto eol=lf
+assets/identity/** -text
+*.ai binary
+*.pdf binary
+*.psd binary
+*.psb binary
+*.pptx binary
+*.png binary
+*.jpg binary
