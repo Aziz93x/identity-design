@@ -1,6 +1,7 @@
 {
   "author": "Abdulaziz Almalki",
-  "version": "1.3.0",
+  "version": "1.4.0",
+  "binary_asset_version": "1.3.0",
   "asset_root": "identity",
   "source_audit_date": "2026-09-28",
   "groups": {
@@ -19,7 +20,7 @@
         "closing": 6
       },
       "picture_areas": "Editable native text boxes to replace with pictures; not click-to-insert placeholders.",
-      "animations": "Apply the task-specific manual sequence after filling the content."
+      "has_preconfigured_animation": false
     },
     "presentations": {
       "label_ar": "قالب العروض الأصلي",
@@ -79,8 +80,7 @@
     },
     "documents": {
       "label_ar": "المستندات والخطابات والنوتة",
-      "native_word_template": false,
-      "usage_note_ar": "اشتق تخطيط المستند من أصل الخطابات أو العناصر، مع نص عربي حي؛ لا تمدد شريحة إلى A4."
+      "native_word_template": false
     },
     "certificates": {
       "label_ar": "الشهادات",
@@ -100,8 +100,7 @@
       "sheet_mm": [
         440,
         300
-      ],
-      "usage_note_ar": "مقاس لوح، لا ديلاين معتمد؛ راجع الشعار والبيانات ومقصد QR."
+      ]
     },
     "screens": {
       "label_ar": "الشاشات والملصقات",
@@ -150,19 +149,9 @@
       "pages": 54,
       "page_numbers_follow": "PDF"
     },
-    "policies": {
-      "label_ar": "تعليمات الشعارات"
-    },
     "fonts": {
       "label_ar": "الخطوط الأصلية",
-      "files": 10,
-      "approved_arabic_family": "DIN Next LT Arabic",
-      "approved_arabic_styles": [
-        "Regular",
-        "Light",
-        "Medium"
-      ],
-      "installation": "Load or install the required font for the editor; the preflight checks file availability only."
+      "files": 10
     }
   },
   "files": [
@@ -368,7 +357,13 @@
       "audit_id": "F028",
       "availability": "bundled",
       "rights": "original_asset_owners",
-      "requires_task_cleanup": false
+      "requires_task_cleanup": false,
+      "role_ar": "موجة خطية أفقية",
+      "pixels": [
+        3508,
+        573
+      ],
+      "mode": "RGBA"
     },
     {
       "path": "الأنماط والعناصر البصرية - Elements/lines_01.png",
@@ -380,7 +375,14 @@
       "audit_id": "F029",
       "availability": "bundled",
       "rights": "original_asset_owners",
-      "requires_task_cleanup": false
+      "requires_task_cleanup": false,
+      "role_ar": "منحنيات صاعدة",
+      "pixels": [
+        2165,
+        1460
+      ],
+      "mode": "RGBA",
+      "maximum_alpha": 153
     },
     {
       "path": "الأنماط والعناصر البصرية - Elements/قالب شبكة خلفيات 01.png",
@@ -392,7 +394,14 @@
       "audit_id": "F033",
       "availability": "bundled",
       "rights": "original_asset_owners",
-      "requires_task_cleanup": false
+      "requires_task_cleanup": false,
+      "role_ar": "شبكة نقاط متموجة",
+      "pixels": [
+        4000,
+        2250
+      ],
+      "mode": "RGBA",
+      "maximum_alpha": 148
     },
     {
       "path": "الأنماط والعناصر البصرية - Elements/الالوان الداعمة.pdf",
@@ -416,8 +425,7 @@
       "audit_id": "F092",
       "availability": "bundled",
       "rights": "original_asset_owners",
-      "requires_task_cleanup": true,
-      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+      "requires_task_cleanup": true
     },
     {
       "path": "القوالب إعلامية - Media Templates/قوالب النشر الاعلامي.pptx",
@@ -429,8 +437,7 @@
       "audit_id": "F103",
       "availability": "bundled",
       "rights": "original_asset_owners",
-      "requires_task_cleanup": true,
-      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+      "requires_task_cleanup": true
     },
     {
       "path": "القوالب إعلامية - Media Templates/قوالب النشر الاعلامي - العمودي.pptx",
@@ -442,8 +449,7 @@
       "audit_id": "F102",
       "availability": "bundled",
       "rights": "original_asset_owners",
-      "requires_task_cleanup": true,
-      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+      "requires_task_cleanup": true
     },
     {
       "path": "القوالب إعلامية - Media Templates/قزالب النشر الاكتروني 01.ai",
@@ -455,8 +461,7 @@
       "audit_id": "F099",
       "availability": "bundled",
       "rights": "original_asset_owners",
-      "requires_task_cleanup": true,
-      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+      "requires_task_cleanup": true
     },
     {
       "path": "القوالب إعلامية - Media Templates/قوالب النشر الاكتروني 02.ai",
@@ -468,8 +473,7 @@
       "audit_id": "F104",
       "availability": "bundled",
       "rights": "original_asset_owners",
-      "requires_task_cleanup": true,
-      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+      "requires_task_cleanup": true
     },
     {
       "path": "المطبوعات - Print Materials/قالب الخطابات.ai",
@@ -481,8 +485,7 @@
       "audit_id": "F113",
       "availability": "bundled",
       "rights": "original_asset_owners",
-      "requires_task_cleanup": true,
-      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+      "requires_task_cleanup": true
     },
     {
       "path": "المطبوعات - Print Materials/قالب الخطابات copy.pdf",
@@ -494,8 +497,7 @@
       "audit_id": "F112",
       "availability": "bundled",
       "rights": "original_asset_owners",
-      "requires_task_cleanup": true,
-      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+      "requires_task_cleanup": true
     },
     {
       "path": "المطبوعات - Print Materials/قالب نوتة.ai",
@@ -507,8 +509,7 @@
       "audit_id": "F115",
       "availability": "bundled",
       "rights": "original_asset_owners",
-      "requires_task_cleanup": true,
-      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+      "requires_task_cleanup": true
     },
     {
       "path": "المطبوعات - Print Materials/نوتة 01.psd",
@@ -520,8 +521,7 @@
       "audit_id": "F117",
       "availability": "bundled",
       "rights": "original_asset_owners",
-      "requires_task_cleanup": true,
-      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+      "requires_task_cleanup": true
     },
     {
       "path": "شهادات التكريم - Recognition Certificates/شهادة copy 2.ai",
@@ -533,8 +533,7 @@
       "audit_id": "F119",
       "availability": "bundled",
       "rights": "original_asset_owners",
-      "requires_task_cleanup": true,
-      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+      "requires_task_cleanup": true
     },
     {
       "path": "شهادات التكريم - Recognition Certificates/شهادة copy.psd",
@@ -546,8 +545,7 @@
       "audit_id": "F122",
       "availability": "bundled",
       "rights": "original_asset_owners",
-      "requires_task_cleanup": true,
-      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+      "requires_task_cleanup": true
     },
     {
       "path": "قوالب الدروع -Plaque Templates/قالب دروع 01.ai",
@@ -559,8 +557,7 @@
       "audit_id": "F128",
       "availability": "bundled",
       "rights": "original_asset_owners",
-      "requires_task_cleanup": true,
-      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+      "requires_task_cleanup": true
     },
     {
       "path": "قوالب الفولدرات - Folder Templates/Folder_02 copy.ai",
@@ -572,8 +569,7 @@
       "audit_id": "F133",
       "availability": "bundled",
       "rights": "original_asset_owners",
-      "requires_task_cleanup": true,
-      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+      "requires_task_cleanup": true
     },
     {
       "path": "قوالب الفولدرات - Folder Templates/Folder_02 copy copy.pdf",
@@ -585,8 +581,7 @@
       "audit_id": "F132",
       "availability": "bundled",
       "rights": "original_asset_owners",
-      "requires_task_cleanup": true,
-      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+      "requires_task_cleanup": true
     },
     {
       "path": "Screen Templates/شاشة عرضية.ai",
@@ -598,8 +593,7 @@
       "audit_id": "F024",
       "availability": "bundled",
       "rights": "original_asset_owners",
-      "requires_task_cleanup": true,
-      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+      "requires_task_cleanup": true
     },
     {
       "path": "Screen Templates/شاشة عرضية.psd",
@@ -611,8 +605,7 @@
       "audit_id": "F027",
       "availability": "bundled",
       "rights": "original_asset_owners",
-      "requires_task_cleanup": true,
-      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+      "requires_task_cleanup": true
     },
     {
       "path": "Screen Templates/الشاشة 01.ai",
@@ -624,8 +617,7 @@
       "audit_id": "F020",
       "availability": "bundled",
       "rights": "original_asset_owners",
-      "requires_task_cleanup": true,
-      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+      "requires_task_cleanup": true
     },
     {
       "path": "Screen Templates/تصميم الشاشة 01.psd",
@@ -637,8 +629,7 @@
       "audit_id": "F023",
       "availability": "bundled",
       "rights": "original_asset_owners",
-      "requires_task_cleanup": true,
-      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+      "requires_task_cleanup": true
     },
     {
       "path": "Screen Templates/Poster copy.ai",
@@ -650,8 +641,7 @@
       "audit_id": "F016",
       "availability": "bundled",
       "rights": "original_asset_owners",
-      "requires_task_cleanup": true,
-      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+      "requires_task_cleanup": true
     },
     {
       "path": "Roll-Up & Pop-Up Templates/رول اب 01.psd",
@@ -663,8 +653,7 @@
       "audit_id": "F008",
       "availability": "bundled",
       "rights": "original_asset_owners",
-      "requires_task_cleanup": true,
-      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+      "requires_task_cleanup": true
     },
     {
       "path": "Roll-Up & Pop-Up Templates/رول اب 02.psd",
@@ -676,8 +665,7 @@
       "audit_id": "F010",
       "availability": "bundled",
       "rights": "original_asset_owners",
-      "requires_task_cleanup": true,
-      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+      "requires_task_cleanup": true
     },
     {
       "path": "Roll-Up & Pop-Up Templates/MockUp 1 copy.psb",
@@ -689,8 +677,7 @@
       "audit_id": "F002",
       "availability": "bundled",
       "rights": "original_asset_owners",
-      "requires_task_cleanup": true,
-      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+      "requires_task_cleanup": true
     },
     {
       "path": "Roll-Up & Pop-Up Templates/بوب اب.psb",
@@ -702,8 +689,7 @@
       "audit_id": "F005",
       "availability": "bundled",
       "rights": "original_asset_owners",
-      "requires_task_cleanup": true,
-      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+      "requires_task_cleanup": true
     },
     {
       "path": "التطبيقات على المنتجات - Product Applications/اكياس ورقية .psd",
@@ -715,8 +701,7 @@
       "audit_id": "F039",
       "availability": "bundled",
       "rights": "original_asset_owners",
-      "requires_task_cleanup": true,
-      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
+      "requires_task_cleanup": true
     },
     {
       "path": "التطبيقات على المنتجات - Product Applications/قالب الكاسات .psd",
@@ -728,32 +713,7 @@
       "audit_id": "F041",
       "availability": "bundled",
       "rights": "original_asset_owners",
-      "requires_task_cleanup": true,
-      "usage_note_ar": "مصدر تصميم أصلي؛ تهيأ نسخة العمل بشعار الكلية والبيانات الصحيحة وتفحص قبل التسليم."
-    },
-    {
-      "path": "COLLEGE-LOGOS-ONLY.md",
-      "group": "policies",
-      "availability": "bundled",
-      "bytes": 1820,
-      "sha256": "984dbbc69f92c20c2292e8685fe105165893c497641880d7c559df871c1be6c4",
-      "source_sha256": "58473ed2ea6c1c1c118c4b9f216c125530b314de2296f2192a3600a636a3e0a7",
-      "preserved_original": false,
-      "transformation": "Portable instructions; removed machine-specific and unavailable review references.",
-      "author": "Abdulaziz Almalki",
-      "audit_id": "F001"
-    },
-    {
-      "path": "الشعارات - Logos/README.md",
-      "group": "policies",
-      "availability": "bundled",
-      "bytes": 2023,
-      "sha256": "c11fa45da2b82693e258e0f4a1a1881a0df8b20415f536337ee77c1fefb11156",
-      "source_sha256": "d511d27795e85688acbb6604ce5ef41b653cb0a6f4696c425152e2f8978d08a4",
-      "preserved_original": false,
-      "transformation": "Portable instructions; removed machine-specific and unavailable review references.",
-      "author": "Abdulaziz Almalki",
-      "audit_id": "F071"
+      "requires_task_cleanup": true
     },
     {
       "path": "قوالب جاهزة/قالب التدريب المصور.pptx",
@@ -793,7 +753,8 @@
       "rights": "original_font_owners_and_embedded_license_terms",
       "audit_id": "F045",
       "requires_task_cleanup": false,
-      "usage_note_ar": "مرفق من حزمة المستخدم بطلبه، مع حفظ الترخيص والنسبة الأصليين؛ وجود الملف لا يوسع قائمة خطوط الهوية المعتمدة."
+      "font_family": "DIN Next LT Arabic",
+      "font_style": "Medium"
     },
     {
       "path": "الخطوط -Fonts/Cairo-Regular.ttf",
@@ -806,7 +767,8 @@
       "rights": "original_font_owners_and_embedded_license_terms",
       "audit_id": "F046",
       "requires_task_cleanup": false,
-      "usage_note_ar": "مرفق من حزمة المستخدم بطلبه، مع حفظ الترخيص والنسبة الأصليين؛ وجود الملف لا يوسع قائمة خطوط الهوية المعتمدة."
+      "font_family": "Cairo",
+      "font_style": "Regular"
     },
     {
       "path": "الخطوط -Fonts/DIN NEXT™ ARABIC REGULAR.otf",
@@ -819,7 +781,8 @@
       "rights": "original_font_owners_and_embedded_license_terms",
       "audit_id": "F047",
       "requires_task_cleanup": false,
-      "usage_note_ar": "مرفق من حزمة المستخدم بطلبه، مع حفظ الترخيص والنسبة الأصليين؛ وجود الملف لا يوسع قائمة خطوط الهوية المعتمدة."
+      "font_family": "DIN Next LT W23",
+      "font_style": "Regular"
     },
     {
       "path": "الخطوط -Fonts/din-next-lt-w23-light.ttf",
@@ -832,7 +795,8 @@
       "rights": "original_font_owners_and_embedded_license_terms",
       "audit_id": "F048",
       "requires_task_cleanup": false,
-      "usage_note_ar": "مرفق من حزمة المستخدم بطلبه، مع حفظ الترخيص والنسبة الأصليين؛ وجود الملف لا يوسع قائمة خطوط الهوية المعتمدة."
+      "font_family": "DIN Next LT W23",
+      "font_style": "Light"
     },
     {
       "path": "الخطوط -Fonts/DINNEXTLTARABIC-LIGHT-2-2.ttf",
@@ -845,7 +809,8 @@
       "rights": "original_font_owners_and_embedded_license_terms",
       "audit_id": "F049",
       "requires_task_cleanup": false,
-      "usage_note_ar": "مرفق من حزمة المستخدم بطلبه، مع حفظ الترخيص والنسبة الأصليين؛ وجود الملف لا يوسع قائمة خطوط الهوية المعتمدة."
+      "font_family": "DIN Next LT Arabic",
+      "font_style": "Light"
     },
     {
       "path": "الخطوط -Fonts/DINNextLTArabic-Regular-3.ttf",
@@ -858,7 +823,8 @@
       "rights": "original_font_owners_and_embedded_license_terms",
       "audit_id": "F050",
       "requires_task_cleanup": false,
-      "usage_note_ar": "مرفق من حزمة المستخدم بطلبه، مع حفظ الترخيص والنسبة الأصليين؛ وجود الملف لا يوسع قائمة خطوط الهوية المعتمدة."
+      "font_family": "DIN Next LT Arabic",
+      "font_style": "Regular"
     },
     {
       "path": "الخطوط -Fonts/FontsFree-Net-GeometricSlab703BT-Bold.ttf",
@@ -871,7 +837,8 @@
       "rights": "original_font_owners_and_embedded_license_terms",
       "audit_id": "F051",
       "requires_task_cleanup": false,
-      "usage_note_ar": "مرفق من حزمة المستخدم بطلبه، مع حفظ الترخيص والنسبة الأصليين؛ وجود الملف لا يوسع قائمة خطوط الهوية المعتمدة."
+      "font_family": "Geometric Slabserif 703",
+      "font_style": "Bold"
     },
     {
       "path": "الخطوط -Fonts/GE-Dinar-One-Light.otf",
@@ -884,7 +851,8 @@
       "rights": "original_font_owners_and_embedded_license_terms",
       "audit_id": "F052",
       "requires_task_cleanup": false,
-      "usage_note_ar": "مرفق من حزمة المستخدم بطلبه، مع حفظ الترخيص والنسبة الأصليين؛ وجود الملف لا يوسع قائمة خطوط الهوية المعتمدة."
+      "font_family": "GE Dinar One",
+      "font_style": "Light"
     },
     {
       "path": "الخطوط -Fonts/geometric-slabserif-703-extra-bold-bt.ttf",
@@ -897,7 +865,8 @@
       "rights": "original_font_owners_and_embedded_license_terms",
       "audit_id": "F053",
       "requires_task_cleanup": false,
-      "usage_note_ar": "مرفق من حزمة المستخدم بطلبه، مع حفظ الترخيص والنسبة الأصليين؛ وجود الملف لا يوسع قائمة خطوط الهوية المعتمدة."
+      "font_family": "GeoSlab703 XBd BT",
+      "font_style": "Extra Bold"
     },
     {
       "path": "الخطوط -Fonts/ntaqat.ttf",
@@ -910,38 +879,10 @@
       "rights": "original_font_owners_and_embedded_license_terms",
       "audit_id": "F054",
       "requires_task_cleanup": false,
-      "usage_note_ar": "مرفق من حزمة المستخدم بطلبه، مع حفظ الترخيص والنسبة الأصليين؛ وجود الملف لا يوسع قائمة خطوط الهوية المعتمدة."
+      "font_family": "ntaqat / DIN Next LT Arabic",
+      "font_style": "Light"
     }
   ],
-  "fonts": {
-    "bundled_directory": "الخطوط -Fonts",
-    "external_override_optional": true,
-    "environment_variable": "IDENTITY_DESIGN_FONT_ROOT",
-    "cli_option": "--font-root",
-    "files": [
-      {
-        "filename": "DINNextLTArabic-Regular-3.ttf",
-        "source_sha256": "21128d204de2676f2479dedfef937ef479fe4dbc106c2708cbf9e2afa1318e03",
-        "availability": "bundled",
-        "required_by_basic_preflight": true,
-        "rights": "Original embedded font license terms are preserved; not relicensed under MIT."
-      },
-      {
-        "filename": "alfont_com_AlFont_com_DINNextLTArabic-Medium.ttf",
-        "source_sha256": "2d472fae50ec701cfbf4f1b69d8677676dbf18a4e62e5eacda0badf54715e9ab",
-        "availability": "bundled",
-        "required_by_basic_preflight": true,
-        "rights": "Original embedded font license terms are preserved; not relicensed under MIT."
-      },
-      {
-        "filename": "DINNEXTLTARABIC-LIGHT-2-2.ttf",
-        "source_sha256": "c0dbf35118ff693eb22b7c996ee63351b75d4c427c763960863d873e2c355b6c",
-        "availability": "bundled",
-        "required_by_basic_preflight": false,
-        "rights": "Original embedded font license terms are preserved; not relicensed under MIT."
-      }
-    ]
-  },
   "not_included_ar": [
     "ملف Illustrator الرئيسي الكبير وبياناته الخاصة",
     "أرشيف الصور وتكرارات EPS",

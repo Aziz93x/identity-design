@@ -12,10 +12,7 @@ __author__ = "Abdulaziz Almalki"
 ENVIRONMENT_VARIABLE = "IDENTITY_DESIGN_ROOT"
 FONT_ENVIRONMENT_VARIABLE = "IDENTITY_DESIGN_FONT_ROOT"
 BUNDLED_ROOT = Path(__file__).resolve().parents[1] / "assets" / "identity"
-WINDOWS_DEFAULT = "C:/AzizWork/identity-design"
 REQUIRED_ASSETS = (
-    ("COLLEGE-LOGOS-ONLY.md", "text"),
-    ("الشعارات - Logos/README.md", "text"),
     ("الشعارات - Logos/PNG/horizontal-color.png", "png"),
     ("الشعارات - Logos/PNG/horizontal-white.png", "png"),
     ("الشعارات - Logos/PNG/vertical-color.png", "png"),
@@ -29,23 +26,17 @@ SIGNATURES = {
     "pdf": (b"%PDF-",),
     "font": (b"\x00\x01\x00\x00", b"OTTO", b"true"),
 }
-TEXT_LIMIT = 1024 * 1024
 
 
-def resolve_root(explicit_root=None, environ=None, platform=None):
+def resolve_root(explicit_root=None, environ=None):
     """Choose one root; an invalid explicit or environment value never falls back."""
     environ = os.environ if environ is None else environ
-    platform = os.name if platform is None else platform
     if explicit_root is not None:
         value, source = explicit_root, "--root"
     elif ENVIRONMENT_VARIABLE in environ:
         value, source = environ[ENVIRONMENT_VARIABLE], ENVIRONMENT_VARIABLE
-    elif BUNDLED_ROOT.exists():
-        value, source = BUNDLED_ROOT, "bundled_assets"
-    elif platform == "nt":
-        value, source = WINDOWS_DEFAULT, "windows_default"
     else:
-        raise ValueError("No identity root configured or bundled assets/identity found. Use --root or IDENTITY_DESIGN_ROOT; the legacy default is Windows-only.")
+        value, source = BUNDLED_ROOT, "bundled_assets"
     if not value or not str(value).strip():
         raise ValueError("The root selected by {} is empty; no fallback was attempted.".format(source))
     return Path(value).expanduser().resolve(), source
@@ -77,29 +68,18 @@ def check_asset(root, relative_path, kind):
             row["error"] = "File is empty."
             return row
         with path.open("rb") as stream:
-            if kind == "text":
-                payload = stream.read(TEXT_LIMIT + 1)
-                if len(payload) > TEXT_LIMIT:
-                    row["error"] = "Policy text exceeds the 1 MiB preflight limit; inspect it manually."
-                    return row
-                if not payload.decode("utf-8-sig").strip():
-                    row["error"] = "Policy text contains no readable text."
-                    return row
-            else:
-                # Inspect only the header, including for the large identity PDF.
-                header = stream.read(16)
-                if not any(header.startswith(signature) for signature in SIGNATURES[kind]):
-                    row["error"] = "Unexpected {} file signature.".format(kind.upper())
-                    return row
+            # Inspect only the header, including for the large identity PDF.
+            header = stream.read(16)
+            if not any(header.startswith(signature) for signature in SIGNATURES[kind]):
+                row["error"] = "Unexpected {} file signature.".format(kind.upper())
+                return row
         row["status"] = "pass"
-    except UnicodeDecodeError:
-        row["error"] = "Policy text is not valid UTF-8."
     except (OSError, ValueError) as error:
         row["error"] = "Cannot read asset: {}: {}".format(type(error).__name__, error)
     return row
 
 
-def preflight(explicit_root=None, environ=None, platform=None, explicit_font_root=None):
+def preflight(explicit_root=None, environ=None, explicit_font_root=None):
     report = {
         "author": __author__,
         "status": "fail",
@@ -108,18 +88,18 @@ def preflight(explicit_root=None, environ=None, platform=None, explicit_font_roo
         "font_root": None,
         "font_root_source": None,
         "checks": [],
-        "limitations": "Checks the current nine required identity files and basic signatures only; this is not validation against a finalized package asset manifest. It does not verify brand approval, font loading, complete file validity, or rendered output. Templates and optional assets must be checked when used.",
+        "limitations": "Checks seven basic identity files and their signatures: four logos, two fonts, and the guide. It does not verify brand approval, font loading, complete file validity, or rendered output. Templates and optional assets must be checked when the task uses them.",
     }
     try:
-        root, source = resolve_root(explicit_root, environ, platform)
+        root, source = resolve_root(explicit_root, environ)
         report.update(root=str(root), root_source=source)
         if not root.is_dir():
-            report["error"] = "Selected identity root is missing or is not a directory. No fallback, copying or downloading was attempted."
+            report["error"] = "Selected identity root is missing or is not a directory. Provide the assets at this path or select an existing root with --root or IDENTITY_DESIGN_ROOT. No fallback, copying or downloading was attempted."
             return report, 2
         font_root, font_source = resolve_font_root(root, explicit_font_root, environ)
         report.update(font_root=str(font_root), font_root_source=font_source)
         if font_source != "asset_root" and not font_root.is_dir():
-            report["error"] = "Configured font root is missing or is not a directory. No fallback to bundled, legacy or installed fonts was attempted."
+            report["error"] = "Configured font root is missing or is not a directory. No fallback to bundled or installed fonts was attempted."
             return report, 2
     except (OSError, ValueError, RuntimeError) as error:
         report["error"] = str(error)
@@ -139,8 +119,7 @@ def preflight(explicit_root=None, environ=None, platform=None, explicit_font_roo
 def main(argv=None):
     parser = argparse.ArgumentParser(
         description=__doc__,
-        epilog=("Root priority: --root, then IDENTITY_DESIGN_ROOT, then the skill's bundled assets/identity if present on any OS, "
-                "then the legacy C:/AzizWork/identity-design on Windows only. Other platforms need bundled assets, --root or the environment variable. "
+        epilog=("Root priority on every OS: --root, then IDENTITY_DESIGN_ROOT, then the skill's bundled assets/identity. "
                 "An invalid selected root or incomplete bundle never falls back. "
                 "Font priority: --font-root, then IDENTITY_DESIGN_FONT_ROOT, then the selected asset root's 'الخطوط -Fonts' directory. "
                 "Regular and Medium are required by this check; Light is checked separately when a task uses it. "
